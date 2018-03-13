@@ -5,7 +5,7 @@
 
                     <div class="col-md-3">
                         <h2>Selamat Datang {{Auth::user()->nama}}</h2>
-                        <small>Kamu memiliki beberapa tugas.</small>
+                        <small>Kamu memiliki beberapa tugas :</small>
                         <ul class="list-group clear-list m-t">
                             <li class="list-group-item fist-item">
                                 <span class="label label-success">1</span> Lengkapi referensi siswa
@@ -44,7 +44,7 @@
                       <div class="widget style1 yellow-bg">
                           <div class="row">
                               <div class="col-xs-4">
-                                  <i class="fa fa-male fa-5x"></i>
+                                  <i class="fa fa-building-o fa-5x"></i>
                               </div>
                               <div class="col-xs-8 text-right">
                                   <span> Total Perusahaan </span>
@@ -56,11 +56,11 @@
                     <div class="col-md-3">
                       <div class="widget style1 lazur-bg">
                           <div class="row">
-                              <div class="col-xs-2">
-                                  <i class="fa fa-male fa-5x"></i>
+                              <div class="col-xs-4">
+                                  <i class="fa fa-bookmark fa-5x"></i>
                               </div>
-                              <div class="col-xs-10 text-right">
-                                  <span> Total Bidang Perusahaan </span>
+                              <div class="col-xs-8 text-right">
+                                  <span> Total Bidang Per. </span>
                                   <h2 class="font-bold">{{$bidangperusahaan}}</h2>
                               </div>
                           </div>
@@ -71,7 +71,7 @@
                       <div class="widget style1 navy-bg">
                           <div class="row">
                               <div class="col-xs-4">
-                                  <i class="fa fa-male fa-5x"></i>
+                                  <i class="fa fa-graduation-cap fa-5x"></i>
                               </div>
                               <div class="col-xs-8 text-right">
                                   <span> Total Jurusan </span>
@@ -84,7 +84,7 @@
                       <div class="widget style1 navy-bg">
                           <div class="row">
                               <div class="col-xs-4">
-                                  <i class="fa fa-male fa-5x"></i>
+                                  <i class="fa fa-home fa-5x"></i>
                               </div>
                               <div class="col-xs-8 text-right">
                                   <span> Total Rayon </span>
@@ -97,7 +97,7 @@
                       <div class="widget style1 navy-bg">
                           <div class="row">
                               <div class="col-xs-4">
-                                  <i class="fa fa-male fa-5x"></i>
+                                  <i class="fa fa-university fa-5x"></i>
                               </div>
                               <div class="col-xs-8 text-right">
                                   <span> Total Rombel </span>
