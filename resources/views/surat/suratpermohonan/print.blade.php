@@ -11,7 +11,7 @@
     <title>SIM |  PKL</title>
     <link href="{{asset('css/bootstrap.min.css')}} "rel="stylesheet">
   </head>
-  <body onload="window.print()">
+  <body onload="window.print();window.close();">
     <div class="container" style="font:tahoma; margin-top: 1cm; margin-right:2cm; margin-left:1cm;">
     <div class="head">
         <!-- <div class="row">
@@ -89,7 +89,7 @@
         <div style="padding-left: 50px; text-align: justify; text-indent: 0.5in;" class=" col-md-12">
             Kami SMK Wikrama Bogor merupakan salah satu Sekolah Menengah  Kejuruan dengan paket keahlian
             @foreach($jurusan as $rj)
-                {{$rj->jurusan}} ({{$rj->singkatan}}),
+                {{$rj->jurusan}},
             @endforeach
             di bawah naungan Yayasan Prawitama yang berdiri sejak tahun 1996. Status Akreditasi A kami raih pada tahun 2015 dan berbagai prestasi akademik dan non akademik telah kami raih, antara lain telah meraih juara 1 pada Lomba Keterampilan Siswa tingkat Kota Bogor, juara 1 pada Olimpiade Olahraga Siswa Nasional tingkat Kota Bogor, meraih medali emas lomba Indonesia Science Project Olympiad bidang Komputer tahun 2015, juara 3 Film Pendek pada Festival Lomba Seni Siswa Nasional tingkat Nasional 2016, pemenang Cyberpreneur Competition Kategori Desain Website Statis tingkat Nasional  tahun 2015, <i>as the 1st Winner of the 2015 SEAMEO Song Angklung Contest</i>, memiliki lisensi Lembaga Sertifikasi Profesi Pihak 1 (LSP P1) dan lulusan dibekali dengan sertifikasi internasional.
 
@@ -98,7 +98,7 @@
         <br>
         <div style="padding-left: 50px; text-align: justify; text-indent: 0.5in;" class=" col-md-12">
             Berkenaan dengan kurikulum pendidikan SMK yang mewajibkan siswa Sekolah Menengah Kejuruan untuk melaksanakan Praktik Kerja Lapangan (PKL) di berbagai instansi yang bertujuan untuk menambah wawasan dan pengetahuan pembelajaran siswa, maka kami mohon kesediaan Bapak/Ibu untuk memberi kesempatan kepada siswa-siswi kami paket keahlian @foreach($jurusan as $rj)
-                {{$rj->jurusan}} ({{$rj->singkatan}}),
+                {{$rj->jurusan}},
             @endforeach untuk melaksanakan Praktik Kerja Lapangan (PKL) di instansi yang Bapak/Ibu pimpin dengan mengisi form kesediaan penerimaan siswa Praktik Kerja Lapangan (PKL) (terlampir).
         </div>
         <div style="padding-left: 50px; text-align: justify; text-indent: 0.5in;" class=" col-md-12">

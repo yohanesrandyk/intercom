@@ -52,7 +52,10 @@
                     <td>
                       <a style="display: none;" id="{{$r->id_surat}}" href="{{url('suratpengantar/e/'.encrypt($r->id_surat))}}"></a>
                       <a href="{{url('suratpengantar/del/'.encrypt($r->id_surat))}}" onclick="return confirm('Surat dengan nomer {{$r->nomersurat}} akan dihapus ?')"><i class="fa fa-trash"></i></a> |
-                      <a href="{{url('suratpengantar/print/'.encrypt($r->id_surat))}}" target="_blank"><i class="fa fa-print"></i></a>
+                      <a onclick="
+                        var targURL = '{{url("suratpengantar/print/".encrypt($r->id_surat))}}';
+                        var newTab = window.open (targURL, '_blank');
+                      "><i class="fa fa-print"></i></a>
                     </td>
                   </tr>
                   @endforeach

@@ -44,12 +44,11 @@ class SuratTugasController extends Controller
     public function store(Request $request)
     {
         //
-        $surat = Surat::OrderBy('id_surat','dec')->limit(1)->first();
-
-        if (count($surat)<>0) {
-            $nosurat = $surat->nomersurat+1;
-        }else{
-            $nosurat=1;
+        $surat = Surat::where('nomersurat',$request->no_surat)->first();
+        if ($surat > 0) {
+            Session::flash('message', 'Data Tidak Dapat Disimpan Karena Data Sudah Ada !!!');
+            Session::flash('alert-class', 'alert-danger');
+            return redirect(url('/surattugas'));
         }
         $datasurat = Surat::where('id_perusahaan',$request->perusahaan)
                             ->where('created_at','like',''.date('Y').'%')
@@ -63,7 +62,7 @@ class SuratTugasController extends Controller
           $data = new Surat;
           $data->id_typesurat='3';
           $data->id_perusahaan=$request->perusahaan;
-          $data->nomersurat=$nosurat;
+          $data->nomersurat=$request->no_surat;
           $data->tgl_keluar=$request->tanggalkeluar;
           $data->isi=$request->namapemb.";".$request->ajaran.";".$request->ks;
           $data->save();

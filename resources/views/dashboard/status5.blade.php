@@ -17,8 +17,8 @@
                                 <div class="col-lg-5">
                                     <dl class="dl-horizontal">
                                     	<dt>Nama :</dt> <dd>{{Auth::user()->nama}}</dd>
-                                        <dt>Jurusan :</dt> <dd>Rekayasa Perangkat Lunak</dd>
-                                        <dt>Rombel :</dt> <dd>RPL XI - 2</dd>
+                                        <dt>Jurusan :</dt> <dd>{{$jurusan->jurusan}}</dd>
+                                        <dt>Rombel :</dt> <dd>{{$rombel->rombel}}</dd>
                                         <dt>Client :</dt> <dd><a href="#" class="text-navy">{{$perusahaan->perusahaan}}</a> </dd>
                                     </dl>
                                 </div>

@@ -9,6 +9,9 @@ use App\Perusahaan;
 use App\Siswa;
 use App\Surat;
 use App\Jurusan;
+use App\Rayon;
+use App\Rombel;
+use App\User;
 class SuratPengantarController extends Controller
 {
     /**
@@ -44,15 +47,13 @@ class SuratPengantarController extends Controller
     public function store(Request $request)
     {
         //
-        $surat = Surat::OrderBy('id_surat','dec')->limit(1)->first();
-        $perusahaan = Perusahaan::Where('status','1')->orderBy('perusahaan')->get();
-
-        if (count($surat)<>0) {
-            $nosurat = $surat->nomersurat+1;
-        }else{
-            $nosurat=1;
+        $surat = Surat::where('nomersurat',$request->no_surat)->first();
+        if ($surat > 0) {
+            Session::flash('message', 'Data Tidak Dapat Disimpan Karena Data Sudah Ada !!!');
+            Session::flash('alert-class', 'alert-danger');
+            return redirect(url('/suratpengantar'));
         }
-
+        $perusahaan = Perusahaan::Where('status','1')->orderBy('perusahaan')->get();
         $datasurat = Surat::where('id_perusahaan',$request->perusahaan)
                             ->where('created_at','like',''.date('Y').'%')
                             ->where('id_typesurat',4)
@@ -65,7 +66,7 @@ class SuratPengantarController extends Controller
           $data = new Surat;
           $data->id_typesurat='4';
           $data->id_perusahaan=$request->perusahaan;
-          $data->nomersurat=$nosurat;
+          $data->nomersurat=$request->no_surat;
           $data->tgl_keluar=$request->tanggalkeluar;
           $data->isi= $request->wm.";".
                       $request->ws.";".
@@ -92,9 +93,27 @@ class SuratPengantarController extends Controller
         $tglkeluar=explode('/', $r->tgl_keluar);
         $namabulan = $bulan->getBulan($tglkeluar[1]);
         $romawi = $bulan->getromawi($tglkeluar[1]);
-        $getsiswa = Siswa::where('id_perusahaan',$r->id_perusahaan)->where('tahun',$tglkeluar[2])->get();
+        $getsiswa = Siswa::where('id_perusahaan',$r->id_perusahaan)->get();
+        $siswa = [];
+        $x = 1;
+        foreach ($getsiswa as $data) {
+           $obj = new siswaObj();
+           $user = User::where("id", $data->id)->first();
+           $obj->nis = $data->nis;
+           $obj->nama = $user->nama;
+           $obj->rayon = Rayon::where("id_rayon", $data->id_rayon)->first()->rayon;
+           $obj->jurusan = Jurusan::where("id_jurusan", $data->id_jurusan)->first()->jurusan;
+           $obj->rombel = Rombel::where("id_rombel", $data->id_rombel)->first()->rombel;
+           $obj->jk = $data->jk;
+           $obj->email = $user->email;
+           $obj->telp = $user->telp;
+           $obj->alamat = $user->alamat;
+           $obj->id = $data->id;
+           $siswa[$x] = $obj;
+           $x++;
+        }
         $jurusan = Jurusan::orderBy('jurusan','asc')->get();
-        return view('surat.suratpengantar.print',compact('r','namabulan','romawi','jurusan','getsiswa'));
+        return view('surat.suratpengantar.print',compact('r','namabulan','romawi','jurusan','siswa'));
     }
 
     /**

@@ -37,11 +37,11 @@
                       <div class="">
                           <div>
                               <h2 class="no-margins">
-                                  {{ $siswa->nama }} (NIS)
+                                  {{ $user->nama }} ({{$siswa->nis}})
                               </h2>
-                              <h4> Rombel - Rayon </h4>
+                              <h4> {{$rombel->rombel}} - {{$rayon->rayon}} </h4>
                               <small>
-                                Murid SMK Wikrama Bogor
+                                {{$jurusan->jurusan}}
                               </small>
                           </div>
                       </div>
@@ -59,42 +59,42 @@
                 <tr>
                   <td>1</td>
                   <td>Bantara</td>
-                  <td>@if($res->bantara == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->bantara == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Nilai</td>
-                  <td>@if($res->nilai == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->nilai == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>3</td>
                   <td>Keuangan</td>
-                  <td>@if($res->keuangan == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->keuangan == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>4</td>
                   <td>Kesiswaan</td>
-                  <td>@if($res->kesiswaan == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->kesiswaan == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>5</td>
                   <td>CBT Produktif</td>
-                  <td>@if($res->cbt_prod == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->cbt_prod == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>6</td>
                   <td>Kehadiran Pengayaan PKL</td>
-                  <td>@if($res->kehadiran_pengayaan_pkl == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->kehadiran_pengayaan_pkl == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>7</td>
                   <td>Lulus Uji Kelayakan</td>
-                  <td>@if($res->lulus_ujikelayakan == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->lulus_ujikelayakan == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
                 <tr>
                   <td>8</td>
                   <td>Perpustakaan</td>
-                  <td>@if($res->perpustakaan == 1) Done @else Belum terpenuhi @endif</td>
+                  <td>@if($res->perpustakaan == 1) Selesai @else Belum terpenuhi @endif</td>
                 </tr>
               </tbody>
             </table>

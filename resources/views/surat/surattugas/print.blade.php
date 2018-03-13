@@ -11,7 +11,7 @@
     <title>SIM |  PKL</title>
     <link href="{{asset('css/bootstrap.min.css')}} "rel="stylesheet">
   </head>
-  <body onload="window.print()">
+  <body onload="window.print();window.close();">
 	<div class="container">
 	<div class="row" align="center">
 		<b><u>SURAT TUGAS</u></b><br>

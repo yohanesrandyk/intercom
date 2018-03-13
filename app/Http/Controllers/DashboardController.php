@@ -50,10 +50,19 @@ class DashboardController extends Controller
       if(Auth::user()->status==2){
         return (new PersyaratanController)->index2(Siswa::where("id", Auth::user()->id)->first()->nis);
       }else if (Auth::user()->status==3) {
-        return view("dashboard.status3");
+        $siswa = Siswa::where("id", Auth::user()->id)->first();
+        $rayon = Rayon::where("id_rayon", $siswa->id_rayon)->first();
+        $rombel = Rombel::where("id_rombel", $siswa->id_rombel)->first();
+        $jurusan = Jurusan::where("id_jurusan", $siswa->id_jurusan)->first();
+        return view("dashboard.status3", compact("siswa", "rayon", "rombel", "jurusan"));
       }else if (Auth::user()->status==5) {
         $id = Auth::user()->id;
         $siswa = Siswa::where("id", $id)->first();
+
+        $rayon = Rayon::where("id_rayon", $siswa->id_rayon)->first();
+        $rombel = Rombel::where("id_rombel", $siswa->id_rombel)->first();
+        $jurusan = Jurusan::where("id_jurusan", $siswa->id_jurusan)->first();
+        
         $id_perusahaan = $siswa->id_perusahaan;
         $rekan_get = Siswa::where([["id_perusahaan", $id_perusahaan], ["id", "<>", $id]])->get();
         $perusahaan = Perusahaan::where("id_perusahaan", $id_perusahaan)->first();
@@ -74,7 +83,7 @@ class DashboardController extends Controller
           $rekan[$x] = $obj;
           $x++;
         }
-        return view("dashboard.status5", compact("siswa", "perusahaan", "rekan"));
+        return view("dashboard.status5", compact("siswa", "perusahaan", "rekan", "rombel", "rayon", "jurusan"));
       }
     }
 

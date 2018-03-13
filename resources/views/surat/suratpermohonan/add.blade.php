@@ -29,6 +29,12 @@
           <form class="form-horizontal m-t-md" method="POST" action="">
             {{ csrf_field() }}
             <div class="form-group">
+                <label class="col-xs-12 col-md-2 control-label">Nomor Surat*</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="no_surat" required>
+                </div>
+            </div>
+            <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Perusahaan *</label>
                 <div class="col-md-10">
                     <select class="form-control select2" name="perusahaan">

@@ -76,7 +76,7 @@
     <th>NIS</th>
     <th>Nama</th>
     <th>Rayon</th>
-    <th></th>
+    <th>Opsi</th>
   </thead>
   <tbody>
     <script type="text/javascript">
@@ -88,10 +88,11 @@
         <td>{{$data->nis}}</td>
         <td>{{$data->nama}}</td>
         <td>{{$data->rayon}}</td>
-        <td><div class="" onclick="document.getElementById('quo{{$data->id}}').click();">
+        <td>
+        <div class="checkbox checkbox-success" onclick="document.getElementById('quo{{$data->id}}').click();">
           <input id="quo{{$data->id}}" type="checkbox" name="" value="" onclick="
             if(document.getElementById('quo{{$data->id}}').checked == true){arr_quo.push({{$data->id}});}
-            else{arr_quo.splice(arr_quo.indexOf({{$data->id}}), 1);};">
+            else{arr_quo.splice(arr_quo.indexOf({{$data->id}}), 1);};"><label></label>
         </div></td>
       </tr>
     @endforeach
@@ -123,7 +124,7 @@ Select all</label></div>
       <th>NIS</th>
       <th>Nama</th>
       <th>Rayon</th>
-      <th></th>
+      <th>Opsi</th>
     </tr>
   </thead>
   <tbody>
@@ -133,10 +134,10 @@ Select all</label></div>
           <td>{{$data->nis}}</td>
           <td>{{$data->nama}}</td>
           <td>{{$data->rayon}}</td>
-          <td><div class="" onclick="document.getElementById('tmp{{$data->id}}').click();">
+          <td><div class="checkbox checkbox-success" onclick="document.getElementById('tmp{{$data->id}}').click();">
             <input id="tmp{{$data->id}}" type="checkbox" name="" value="" onclick="
               if(document.getElementById('tmp{{$data->id}}').checked == true) {arr_tmp.push({{$data->id}});}
-              else{arr_tmp.splice(arr_tmp.indexOf({{$data->id}}), 1);};">
+              else{arr_tmp.splice(arr_tmp.indexOf({{$data->id}}), 1);};"><label></label>
           </div></td>
         </tr>
       @endforeach

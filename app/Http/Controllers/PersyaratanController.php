@@ -9,6 +9,7 @@ use App\User;
 use App\Siswa;
 use App\Rayon;
 use App\Jurusan;
+use App\Rombel;
 use App\Pembimbing;
 use App\Kaprog;
 
@@ -41,7 +42,10 @@ class PersyaratanController extends Controller
         $res = Persyaratan::where("nis", $id)->first();
         $siswa = Siswa::where("nis", $id)->first();
         $user = User::where("id", $siswa->id)->first();
-        return view("persyaratan.index2", ["res"=>$res, "siswa"=>$user]);
+        $rayon = Rayon::where("id_rayon", $siswa->id_rayon)->first();
+        $rombel = Rombel::where("id_rombel", $siswa->id_rombel)->first();
+        $jurusan = Jurusan::where("id_jurusan", $siswa->id_jurusan)->first();
+        return view("persyaratan.index2", ["res"=>$res, "siswa"=>$siswa, "user"=>$user, "rayon"=>$rayon, "rombel"=>$rombel, "jurusan"=>$jurusan]);
     }
      public function index(){
         if(Auth::user()->id_role==4){

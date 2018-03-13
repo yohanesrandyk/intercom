@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 
 </head>
-<body onload="window.print()">
+<body onload="window.print();window.close();">
 <div class="container" style="margin-top: 1cm; margin-left: 1.5cm; margin-right: 1.5cm; font-style: arial; font-size: 12pt;">
 	<table>
 		<tr>
@@ -84,13 +84,13 @@
 					<th>PAKET KEAHLIAN</th>
 				</tr>
         <?php $no=1 ?>
-        @foreach($getsiswa as $siswa)
+        @foreach($siswa as $data)
 				<tr>
 					<td><?php echo $no++ ?></td>
-					<td>{{$siswa->nis}}</td>
-					<td>{{$siswa->getNama->nama}}</td>
-					<td>XI</td>
-					<td>{{$siswa->getJurusan->jurusan}}</td>
+					<td>{{$data->nis}}</td>
+					<td>{{$data->nama}}</td>
+					<td>{{$data->rombel}}</td>
+					<td>{{$data->jurusan}}</td>
 				</tr>
         @endforeach
 			</table>
