@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>intercom</title>
+    <title>InterCom</title>
     <link rel="shortcut icon" href="{{asset('img/icons/icon.ico')}}">
     <link href="{{asset('css/bootstrap.min.css')}} "rel="stylesheet">
     <link href="{{asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
@@ -55,7 +55,7 @@
 
             $(document).ready(function(){
               $(".select2").select2();
-                $('.table').DataTable({
+                $('.dataTables-example').DataTable({
                     pageLength: 25,
                     responsive: true,
                     buttons: [
