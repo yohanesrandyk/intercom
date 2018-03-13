@@ -20,77 +20,91 @@
                                 <span class="label label-default">4</span> Masukkan data user
                             </li>
                             <li class="list-group-item">
-                                <span class="label label-primary">5</span> Masukkan data siswa
+                                <span class="label label-warning">5</span> Masukkan data siswa
                             </li>
                             <li class="list-group-item">
-                                <span class="label label-default">6</span> Kelola surat
+                                <span class="label label-danger">6</span> Kelola surat
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-success pull-right">Monthly</span>
-                                <h5>Data Siswa</h5>
-                            </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">{{$siswa}}</h1>
-                                <small>Total siswa</small>
-                            </div>
-                        </div>
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-success pull-right">Monthly</span>
-                                <h5>Data Perusahaan</h5>
-                            </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">{{$perusahaan}}</h1>
-                                <small>Total perusahaan</small>
-                            </div>
-                        </div>
+                      <div class="widget style1 red-bg">
+                          <div class="row">
+                              <div class="col-xs-4">
+                                  <i class="fa fa-male fa-5x"></i>
+                              </div>
+                              <div class="col-xs-8 text-right">
+                                  <span> Total Siswa </span>
+                                  <h2 class="font-bold">{{$siswa}}</h2>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Data Bidang Perusahaan</h5>
-                            </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">{{$bidangperusahaan}}</h1>
-                                <small>Total Bidang Perusahaan</small>
-                            </div>
-                        </div>
+                      <div class="widget style1 yellow-bg">
+                          <div class="row">
+                              <div class="col-xs-4">
+                                  <i class="fa fa-male fa-5x"></i>
+                              </div>
+                              <div class="col-xs-8 text-right">
+                                  <span> Total Perusahaan </span>
+                                  <h2 class="font-bold">{{$perusahaan}}</h2>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <span class="label label-success pull-right">Monthly</span>
-                        <h5>Referensi siswa</h5>
+                      <div class="widget style1 lazur-bg">
+                          <div class="row">
+                              <div class="col-xs-2">
+                                  <i class="fa fa-male fa-5x"></i>
+                              </div>
+                              <div class="col-xs-10 text-right">
+                                  <span> Total Bidang Perusahaan </span>
+                                  <h2 class="font-bold">{{$bidangperusahaan}}</h2>
+                              </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="ibox-content">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <small class="stats-label">Jurusan</small>
-                                <h4>{{$jurusan}}</h4>
-                            </div>
-                        </div>
+
+                    <div class="col-md-3">
+                      <div class="widget style1 navy-bg">
+                          <div class="row">
+                              <div class="col-xs-4">
+                                  <i class="fa fa-male fa-5x"></i>
+                              </div>
+                              <div class="col-xs-8 text-right">
+                                  <span> Total Jurusan </span>
+                                  <h2 class="font-bold">{{$jurusan}}</h2>
+                              </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="ibox-content">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <small class="stats-label">Rayon</small>
-                                <h4>{{$rayon}}</h4>
-                            </div>
-                        </div>
+                    <div class="col-md-3">
+                      <div class="widget style1 navy-bg">
+                          <div class="row">
+                              <div class="col-xs-4">
+                                  <i class="fa fa-male fa-5x"></i>
+                              </div>
+                              <div class="col-xs-8 text-right">
+                                  <span> Total Rayon </span>
+                                  <h2 class="font-bold">{{$rayon}}</h2>
+                              </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="ibox-content">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <small class="stats-label">Rombel</small>
-                                <h4>{{$rombel}}</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="col-md-3">
+                      <div class="widget style1 navy-bg">
+                          <div class="row">
+                              <div class="col-xs-4">
+                                  <i class="fa fa-male fa-5x"></i>
+                              </div>
+                              <div class="col-xs-8 text-right">
+                                  <span> Total Rombel </span>
+                                  <h2 class="font-bold">{{$rombel}}</h2>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                     <div class="row">
 
@@ -107,8 +121,8 @@
                                     <div class="ibox-content">
 
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <table class="table table-hover margin bottom">
+                                            <div class="col-lg-12">
+                                                <table class="table table-hover margin bottom dataTables-example">
                                                     <thead>
                                                     <tr>
                                                         <th style="width: 1%" class="text-center">No.</th>
@@ -118,9 +132,10 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
+                                                    <?php $no=1; ?>
                                                     @foreach($perusahaan_p as $data)
                                                     <tr>
-                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">{{$no++}}</td>
                                                         <td>{{$data->perusahaan}}
                                                             </td>
                                                         <td class="text-center small">{{$data->kota}}</td>
@@ -132,9 +147,9 @@
                                                 </table>
                                             </div>
                                             <div class="col-lg-6">
-                                            	
+
                                             </div>
-                                            
+
                                     </div>
                                     </div>
 
