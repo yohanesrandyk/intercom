@@ -31,10 +31,6 @@ Auth::routes();
 
 Route::get('check_absen','CommonController@status_absen');
 
-Route::get('404', function(){
-  return view("404");
-});
-
 Route::get('/', function () {
     if(Auth::user()){
       return redirect('home');

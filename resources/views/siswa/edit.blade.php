@@ -51,8 +51,8 @@
           <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label">Jenis Kelamin</label>
               <div class="col-sm-10">
-                <input type="radio" name="jk" value="L" @if ($siswa->jk == "L") checked="" @endif required>Laki-laki<br>
-                <input type="radio" name="jk" value="P" @if ($siswa->jk == "P") checked="" @endif required>Perempuan
+              <div class="radio radio-info radio-inline"><input id="radiol" type="radio" name="jk" value="L" @if ($siswa->jk == "L") checked="" @endif required><label for="radiol"> Laki - laki </label></div>
+              <div class="radio radio-danger radio-inline"><input id="radiop" type="radio" name="jk" value="P" @if ($siswa->jk == "P") checked="" @endif required><label for="radiop"> Perempuan </label></div>
               </div>
           </div>
           <div class="form-group">
