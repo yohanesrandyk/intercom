@@ -4,7 +4,7 @@
   </div>
   <ul class="nav navbar-top-links navbar-right">
   <li>
-                    <span class="m-r-sm text-muted welcome-message">Welcome to InterCom, App by Romusha Team.</span>
+                    <span class="m-r-sm text-muted welcome-message">Selamat datang di aplikasi InterCom yang di kembangkan oleh Romusha Team!</span>
                 </li>
     <li>
       <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">

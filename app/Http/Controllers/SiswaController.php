@@ -13,6 +13,8 @@ use App\Rombel;
 use App\Persyaratan;
 use App\Kaprog;
 use App\Pembimbing;
+use App\Jurnal;
+use App\Kehadiran;
 
 class siswaObj{
   public $nis, $nama, $rayon, $jurusan, $rombel, $jk, $email, $telp, $alamat, $agama, $bop, $bod, $id;
@@ -142,6 +144,9 @@ class SiswaController extends Controller
       return redirect("siswa");
     }
     public function destroy($id){
+      Jurnal::where("id", $id)->delete();
+      Kehadiran::where("id", $id)->delete();
+      Persyaratan::where("nis", Siswa::where("id", $id)->first()->nis)->delete();
       Siswa::where("id", $id)->delete();
       User::where("id", $id)->delete();
       return redirect("siswa");

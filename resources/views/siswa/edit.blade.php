@@ -82,7 +82,7 @@
            <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label"></label>
               <div class="col-sm-10">
-          <input type="submit" class="btn btn-primary btn-block" name="submit" value="Simpan">
+          <input type="submit" class="btn btn-primary btn-block" name="submit" value="Update">
               </div>
             </div>
         </form>

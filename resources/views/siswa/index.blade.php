@@ -50,6 +50,7 @@
                 <th>Email</th>
                 <th>Telepon</th>
                 <th>Alamat</th>
+                <th>Opsi</th>
               </thead>
               <tbody>
                 @foreach ($siswa as $data)
@@ -71,6 +72,7 @@
                     <td>{{$data->email}}</td>
                     <td>{{$data->telp}}</td>
                     <td>{{$data->alamat}}</td>
+                    <td><a href="siswa/del/{{$data->id}}"><i class="fa fa-trash"></i></a></td>
                   </tr>
                 @endforeach
               </tbody>

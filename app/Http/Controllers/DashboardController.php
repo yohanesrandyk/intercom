@@ -11,6 +11,9 @@ use App\Rayon;
 use App\Rombel;
 use App\Jurusan;
 use App\BidangPerusahaan;
+use App\Persyaratan;
+use App\Kaprog;
+use App\Pembimbing;
 
 // class siswaObj{
 //   public $id, $nis, $nama, $rayon, $jurusan, $rombel, $jk, $email, $telp, $alamat, $agama, $bop, $bod, $id_perusahaan, $status_perusahaan, $area;
@@ -35,14 +38,78 @@ class DashboardController extends Controller
      */
      public function index(){
       if (Auth::user()->status==0) {
-        $siswa = count(Siswa::all());
+        if (Auth::user()->id_role == 2) {
+          $siswa = count(Siswa::where("id_jurusan", Kaprog::where("id", Auth::user()->id)->first()->id_jurusan)->get());
+        }else if (Auth::user()->id_role == 4) {
+          $siswa = count(Siswa::where("id_rayon", Pembimbing::where("id", Auth::user()->id)->first()->id_rayon)->get());
+        }else{
+          $siswa = count(Siswa::all());
+        }
         $perusahaan = count(Perusahaan::all());
         $bidangperusahaan = count(BidangPerusahaan::all());
         $jurusan = count(Jurusan::all());
         $rayon = count(Rayon::all());
         $rombel = count(Rombel::all());
         $perusahaan_p = Perusahaan::all();
-        return view("dashboard.status0", compact("siswa", "perusahaan", "bidangperusahaan", "jurusan", "rayon", "rombel", "perusahaan_p"));
+        if (Auth::user()->id_role == 2) {
+          $siswa_get = Siswa::where("id_jurusan", Kaprog::where("id", Auth::user()->id)->first()->id_jurusan)->get();
+          $selesai = 0;
+          foreach ($siswa_get as $data) {
+            $cek = count(Persyaratan::where([
+              ["nis", $data->nis],
+              ["nilai", 1],
+              ["bantara", 1],
+              ["keuangan", 1],
+              ["kesiswaan", 1],
+              ["cbt_prod", 1],
+              ["kehadiran_pengayaan_pkl", 1],
+              ["lulus_ujikelayakan", 1],
+              ["perpustakaan", 1],
+            ])->first());
+            if ($cek>0) {
+              $selesai++;
+            }
+          }
+        }else if (Auth::user()->id_role == 4) {
+          $siswa_get = Siswa::where("id_rayon", Pembimbing::where("id", Auth::user()->id)->first()->id_rayon)->get();
+          $selesai = 0;
+          foreach ($siswa_get as $data) {
+            $cek = count(Persyaratan::where([
+              ["nis", $data->nis],
+              ["nilai", 1],
+              ["bantara", 1],
+              ["keuangan", 1],
+              ["kesiswaan", 1],
+              ["cbt_prod", 1],
+              ["kehadiran_pengayaan_pkl", 1],
+              ["lulus_ujikelayakan", 1],
+              ["perpustakaan", 1],
+            ])->first());
+            if ($cek>0) {
+              $selesai++;
+            }
+          }
+        }else if(Auth::user()->id_role == 5){
+          $selesai = count(Persyaratan::where([
+            ["bantara", 1]
+        ])->get());
+        }else if(Auth::user()->id_role == 6){
+          $selesai = count(Persyaratan::where([
+            ["perpustakaan", 1]
+        ])->get());
+        }else if(Auth::user()->id_role == 7){
+          $selesai = count(Persyaratan::where([
+            ["kesiswaan", 1]
+        ])->get());
+        }else if(Auth::user()->id_role == 8){
+          $selesai = count(Persyaratan::where([
+            ["keuangan", 1]
+        ])->get());
+        }
+        if (Auth::user()->id_role!=1) {
+          $belum_selesai = $siswa-$selesai;
+        }
+        return view("dashboard.status0", compact("siswa", "perusahaan", "bidangperusahaan", "jurusan", "rayon", "rombel", "perusahaan_p", "selesai", "belum_selesai"));
       }
       else if (Auth::user()->status==1 || Auth::user()->status==4) {
         return view("dashboard.status1or4");

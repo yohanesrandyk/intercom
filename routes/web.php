@@ -47,6 +47,14 @@ Route::get('home', function () {
     }
 });
 
+Route::get('pengembang', function () {
+  if(Auth::user()){
+      return view("dev.index");
+    }else{
+      return redirect('login');
+    }
+});
+
 //bkk
 
 Route::get('referensi', function(){

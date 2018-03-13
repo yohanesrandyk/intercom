@@ -39,23 +39,14 @@
             <li>
                 <a href="{{url('/home')}}"><i class="fa fa-th-large"></i><span class="nav-label">Home</span></a>
             </li>
-            @if (Auth::user()->id_role == 2 || Auth::user()->id_role > 3)
+            @if (Auth::user()->id_role == 1 || Auth::user()->id_role == 2 || Auth::user()->id_role == 4)
             <li>
-                <a href="{{url('persyaratan')}}"><i class="fa fa-check"></i><span class="nav-label">Persyaratan Siswa</span></a>
+                <a href="{{url('siswa')}}"><i class="fa fa-users"></i><span class="nav-label">Daftar Siswa</span></a>
             </li>
             @endif
             @if (Auth::user()->id_role == 1)
             <li>
-                <a href="{{url('referensi')}}"><i class="fa fa-tags"></i><span class="nav-label">Referensi Siswa</span></a>
-            </li>
-            <li>
-                <a href="{{url('bidangperusahaan')}}"><i class="fa fa-bookmark"></i><span class="nav-label">Bidang Perusahaan</span></a>
-            </li>
-            <li>
-                <a href="{{url('perusahaan')}}"><i class="fa fa-building-o"></i><span class="nav-label">Perusahaan</span></a>
-            </li>
-            <li>
-                <a href=""><i class="fa fa-envelope-o"></i> <span class="nav-label">Surat</span><span class="fa arrow"></span></a>
+                <a href=""><i class="fa fa-envelope-o"></i> <span class="nav-label">Daftar Surat</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="{{url('suratpermohonan')}}">Surat Permohonan</a></li>
                     <li><a href="{{url('suratpengantar')}}">Surat Pengantar</a></li>
@@ -65,7 +56,16 @@
                 </ul>
             </li>
             <li>
-                <a href="{{url('user')}}"><i class="fa fa-user"></i><span class="nav-label">User</span></a>
+                <a href="{{url('user')}}"><i class="fa fa-user"></i><span class="nav-label">Daftar User</span></a>
+            </li>
+            <li>
+                <a href="{{url('perusahaan')}}"><i class="fa fa-building-o"></i><span class="nav-label">Perusahaan</span></a>
+            </li>
+            <li>
+                <a href="{{url('referensi')}}"><i class="fa fa-archive"></i><span class="nav-label">Referensi Siswa</span></a>
+            </li>
+            <li>
+                <a href="{{url('bidangperusahaan')}}"><i class="fa fa-bookmark"></i><span class="nav-label">Bidang Perusahaan</span></a>
             </li>
             @endif
             @if(Auth::user()->id_role == 2)
@@ -73,19 +73,22 @@
                 <a href="{{url('penempatan')}}"><i class="fa fa-map-marker"></i><span class="nav-label">Penempatan</span></a>
             </li>
             @endif
-            @if (Auth::user()->id_role == 1 || Auth::user()->id_role == 2 || Auth::user()->id_role == 4)
+            @if (Auth::user()->id_role == 2 || Auth::user()->id_role > 3)
             <li>
-                <a href="{{url('siswa')}}"><i class="fa fa-male"></i><span class="nav-label">Siswa</span></a>
+                <a href="{{url('persyaratan')}}"><i class="fa fa-check"></i><span class="nav-label">Persyaratan Siswa</span></a>
             </li>
             @endif
             @if (Auth::user()->status == 5)
             <li>
-                <a href="{{url('kehadiran')}}"><i class="fa fa-check"></i><span class="nav-label">Kehadiran</span><span class="label label-info pull-right">@if (isset($SessionVar[0])){{$SessionVar[0]}}@endif</span></a>
-            </li>
-            <li>
                 <a href="{{url('jurnal')}}"><i class="fa fa-book"></i><span class="nav-label">Jurnal</span></a>
             </li>
+            <li>
+                <a href="{{url('kehadiran')}}"><i class="fa fa-check"></i><span class="nav-label">Kehadiran</span><span class="label label-info pull-right"></span></a>
+            </li>
             @endif
+            <li>
+                <a href="{{url('pengembang')}}"><i class="fa fa-gears"></i><span class="nav-label">Pengembang</span><span class="label label-info pull-right"></span></a>
+            </li>
         </ul>
     </div>
 </nav>

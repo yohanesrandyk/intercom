@@ -20,16 +20,16 @@
     @endsection
 @section('content')
   <div class="col-lg-6">
-      <div class="ibox float-e-margins">
+      <div class="ibox float-e-margins collapsed">
         <div class="ibox-title"><h5>Tabel Data Rayon</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
-              <i class="fa fa-chevron-up"></i>
+              <i class="fa fa-chevron-down"></i>
             </a>
           </div>
         </div>
         <div class="ibox-content">
-          <div class="table-responsive">
+          <!-- <div class="table-responsive"> -->
             <table class="table table-striped table-bordered table-hover dataTables-example" >
               <thead>
                 <th>Rayon</th>
@@ -42,22 +42,22 @@
                 @endforeach
               </tbody>
             </table>
-          </div>
+          <!-- </div> -->
           <a href="rayon/add" class="btn btn-primary">Tambah</a>
         </div>
       </div>
   </div>
   <div class="col-lg-6">
-      <div class="ibox float-e-margins">
+      <div class="ibox float-e-margins collapsed">
         <div class="ibox-title"><h5>Tabel Data Rombel</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
-              <i class="fa fa-chevron-up"></i>
+              <i class="fa fa-chevron-down"></i>
             </a>
           </div>
         </div>
         <div class="ibox-content">
-          <div class="table-responsive">
+          <!-- <div class="table-responsive"> -->
             <table class="table table-striped table-bordered table-hover dataTables-example" >
               <thead>
                 <th>Rombel</th>
@@ -70,22 +70,22 @@
                 @endforeach
               </tbody>
             </table>
-          </div>
+          <!-- </div> -->
           <a href="rombel/add" class="btn btn-primary">Tambah</a>
         </div>
       </div>
   </div>
   <div class="col-lg-12">
-      <div class="ibox float-e-margins">
+      <div class="ibox float-e-margins collapsed">
         <div class="ibox-title"><h5>Tabel Data Jurusan</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
-              <i class="fa fa-chevron-up"></i>
+              <i class="fa fa-chevron-down"></i>
             </a>
           </div>
         </div>
         <div class="ibox-content">
-          <div class="table-responsive">
+          <!-- <div class="table-responsive"> -->
             <table class="table table-striped table-bordered table-hover dataTables-example" >
               <thead>
                 <th>Jurusan</th>
@@ -98,7 +98,7 @@
                 @endforeach
               </tbody>
             </table>
-          </div>
+          <!-- </div> -->
           <a href="jurusan/add" class="btn btn-primary">Tambah</a>
         </div>
       </div>

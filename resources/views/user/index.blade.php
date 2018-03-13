@@ -38,6 +38,7 @@
                 <th>Telepon</th>
                 <th>Alamat</th>
                 <th>Role</th>
+                <th>Opsi</th>
               </thead>
               <tbody>
                 @foreach ($user as $data)
@@ -54,6 +55,7 @@
                         @endif
                       @endforeach
                     </td>
+                    <td><a href="user/del/{{$data->id}}"><i class="fa fa-trash"></i></a></td>
                   </tr>
                 @endforeach
               </tbody>

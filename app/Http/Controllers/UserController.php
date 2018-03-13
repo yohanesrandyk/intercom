@@ -95,6 +95,11 @@ class UserController extends Controller
       return redirect("user");
     }
     public function destroy($id){
+      if (User::where("id", $id)->first()->id_role==2) {
+        Kaprog::where("id", $id)->delete();
+      }else if (User::where("id", $id)->first()->id_role==4) {
+        Pembimbing::where("id", $id)->delete();
+      }
       User::where("id", $id)->delete();
       return redirect("user");
     }
