@@ -11,10 +11,10 @@
                         <strong class="font-bold">{{Auth::user()->nama}}</strong>
                       </span>
                       <span class="text-muted text-xs block">
-                        @if (Auth::user()->id_role == "1") 
+                        @if (Auth::user()->id_role == "1")
                         BKK
                         @elseif(Auth::user()->id_role == "2")
-                        Kepala Program 
+                        Kepala Program
                         @elseif(Auth::user()->id_role == "3")
                         Siswa
                         @elseif(Auth::user()->id_role == "4")
@@ -33,7 +33,7 @@
                   </a>
                 </div>
                 <div class="logo-element">
-                    iC
+                    IC
                 </div>
             </li>
             <li>

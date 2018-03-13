@@ -1,7 +1,7 @@
 @extends('layout.wrapper')
     @section('breadcrumb')
     <div class="row wrapper border-bottom white-bg page-heading">
-        <div class="col-lg-10">            
+        <div class="col-lg-10">
         	<h2>Edit Data Perusahaan</h2>
             <ol class="breadcrumb">
                 <li>
@@ -80,7 +80,7 @@
                     <input type="text" class="form-control" name="email" required value="{{$r->email}}">
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display: none;">
                 <label class="col-sm-2 col-sm-2 control-label">Status *</label>
                 <div class="col-sm-10">
                   <select class="form-control" name="status" disabled="">
