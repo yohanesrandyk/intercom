@@ -21,8 +21,12 @@
 @section('content')
   <div class="col-lg-6">
       <div class="ibox float-e-margins">
-        <div class="ibox-title">
-            <h5>Tabel Data Rayon</h5>
+        <div class="ibox-title"><h5>Tabel Data Rayon</h5>
+          <div class="ibox-tools">
+            <a class="collapse-link">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
         <div class="ibox-content">
           <div class="table-responsive">
@@ -45,8 +49,12 @@
   </div>
   <div class="col-lg-6">
       <div class="ibox float-e-margins">
-        <div class="ibox-title">
-            <h5>Tabel Data Rombel</h5>
+        <div class="ibox-title"><h5>Tabel Data Rombel</h5>
+          <div class="ibox-tools">
+            <a class="collapse-link">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
         <div class="ibox-content">
           <div class="table-responsive">
@@ -69,8 +77,12 @@
   </div>
   <div class="col-lg-12">
       <div class="ibox float-e-margins">
-        <div class="ibox-title">
-            <h5>Tabel Data Jurusan</h5>
+        <div class="ibox-title"><h5>Tabel Data Jurusan</h5>
+          <div class="ibox-tools">
+            <a class="collapse-link">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
         <div class="ibox-content">
           <div class="table-responsive">

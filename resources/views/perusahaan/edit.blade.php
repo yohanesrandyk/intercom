@@ -31,7 +31,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Bidang *</label>
                 <div class="col-sm-10">
-                    <select class="form-control" name="id_bidang">
+                    <select class="select2 form-control" name="id_bidang">
                         @foreach($data_bidang as $datas)
                             <option value="{{$datas->id_bidang}}" {{$datas->id_bidang==$r->id_bidang?"selected":""}}>{{$datas->bidangperusahaan}}</option>
                         @endforeach
@@ -83,7 +83,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Status *</label>
                 <div class="col-sm-10">
-                  <select class="form-control" name="status">
+                  <select class="form-control" name="status" disabled="">
                       <option value="0" {{$r->status=="0"?"selected":""}}>Pengajuan</option>
                       <option value="1" {{$r->status=="1"?"selected":""}}>Terverifikasi</option>
                   </select>
