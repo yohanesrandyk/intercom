@@ -27,6 +27,7 @@
       <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
             @include('layout.header')
+            @yield('dashboard-header')
         </div>
             @yield('breadcrumb')
         <div class="wrapper wrapper-content">
@@ -61,6 +62,18 @@
                       },
                     pageLength: 25,
                     responsive: true,
+                    buttons: [
+                    ]
+                });
+
+                $('.dataTables-cus').DataTable({
+                    "language": {
+                          "url": "http://cdn.datatables.net/plug-ins/1.10.11/i18n/Indonesian.json"
+                      },
+                    pageLength: 25,
+                    responsive: true,
+                    searching: false,
+                    bFilter: false,
                     buttons: [
                     ]
                 });
