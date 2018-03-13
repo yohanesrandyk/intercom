@@ -1,19 +1,6 @@
-{{-- <form class="form-horizontal" method="POST" action="{{ route('login') }}">{{ csrf_field() }}
-<input type="text" name="username" value=""><br>
-<input type="password" name="password" value=""><br>
-<label><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me</label><br>
-<button type="submit" class="btn btn-primary">Login</button><br>
-<a class="btn btn-link" href="{{ route('password.request') }}">Forgot Your Password?</a>
-</form> --}}
-
-
 <!DOCTYPE html>
 <html>
-
-
-<!-- Mirrored from webapplayers.com/inspinia_admin-v2.7/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Feb 2017 08:19:21 GMT -->
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,7 +20,7 @@
         <div>
             <div>
 
-                <h1 class="logo-name">iC</h1>
+                <h1 class="logo-name">IC</h1>
 
             </div><br><br>
             <!-- <p>Please Login.</p> -->
@@ -54,7 +41,7 @@
                 {{-- <p class="text-muted text-center"><small>Do not have an account?</small></p>
                 <a class="btn btn-sm btn-white btn-block" href="register.html">Create an account</a> --}}
             </form>
-            <p class="m-t"> <small>Internship Management app by Romusha Team &copy; 2017</small> </p>
+            <p class="m-t"> <small>InterCom App by Romusha Team &copy; 2018</small> </p>
         </div>
     </div>
 

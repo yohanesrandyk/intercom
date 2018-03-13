@@ -91,7 +91,7 @@
                     <input type="text" class="form-control" name="email" required>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display: none;">
                 <label class="col-sm-2 col-sm-2 control-label">Status *</label>
                 <div class="col-sm-10">
                   <select class="form-control" name="status" disabled="">

@@ -45,7 +45,6 @@
                     <th>Telepon</th>
                     <th>Website</th>
                     <th>Email</th>
-                    <th>Status</th>
                     <!-- <th>Opsi</th> -->
                   </tr>
                 </thead>
@@ -65,7 +64,6 @@
                         <td>{{$r->telp}}</td>
                         <td>{{$r->website}}</td>
                         <td>{{$r->email}}</td>
-                        <td>{{$status}}</td>
                         <!-- <td></td> -->
                   </tr>
                   @endforeach
