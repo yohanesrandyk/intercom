@@ -56,6 +56,9 @@
             $(document).ready(function(){
               $(".select2").select2();
                 $('.dataTables-example').DataTable({
+                    "language": {
+                          "url": "http://cdn.datatables.net/plug-ins/1.10.11/i18n/Indonesian.json"
+                      },
                     pageLength: 25,
                     responsive: true,
                     buttons: [
