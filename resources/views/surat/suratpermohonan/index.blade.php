@@ -45,14 +45,14 @@
                 </thead>
                 <tbody>
                   @foreach($data as $r)
-                  <tr>
+                  <tr ondblclick="document.getElementById('{{$r->id_surat}}').click()">
                     <td>{{$r->nomersurat}}</td>
                     <td>{{$r->getPerusahaan->perusahaan}}</td>
                     <td>{{$r->tgl_keluar}}</td>
                     <td>
-                      <a href="{{url('suratpermohonan/e/'.encrypt($r->id_surat))}}">Edit</a> |
-                      <a href="{{url('suratpermohonan/del/'.encrypt($r->id_surat))}}" onclick="return confirm('Surat dengan nomer {{$r->nomersurat}} akan dihapus ?')">Hapus</a> |
-                      <a href="{{url('suratpermohonan/print/'.encrypt($r->id_surat))}}" target="_blank">Print</a>
+                      <a id="{{$r->id_surat}}" href="{{url('suratpermohonan/e/'.encrypt($r->id_surat))}}" style="display: none;"></a>
+                      <a href="{{url('suratpermohonan/del/'.encrypt($r->id_surat))}}" onclick="return confirm('Surat dengan nomer {{$r->nomersurat}} akan dihapus ?')"><i class="fa fa-trash"></i></a> |
+                      <a href="{{url('suratpermohonan/print/'.encrypt($r->id_surat))}}" target="_blank"><i class="fa fa-print"></i></a>
                     </td>
                   </tr>
                   @endforeach

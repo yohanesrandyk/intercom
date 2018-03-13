@@ -10,6 +10,7 @@ use App\Perusahaan;
 use App\Rayon;
 use App\Rombel;
 use App\Jurusan;
+use App\BidangPerusahaan;
 
 // class siswaObj{
 //   public $id, $nis, $nama, $rayon, $jurusan, $rombel, $jk, $email, $telp, $alamat, $agama, $bop, $bod, $id_perusahaan, $status_perusahaan, $area;
@@ -34,7 +35,14 @@ class DashboardController extends Controller
      */
      public function index(){
       if (Auth::user()->status==0) {
-        return view("dashboard.status0");
+        $siswa = count(Siswa::all());
+        $perusahaan = count(Perusahaan::all());
+        $bidangperusahaan = count(BidangPerusahaan::all());
+        $jurusan = count(Jurusan::all());
+        $rayon = count(Rayon::all());
+        $rombel = count(Rombel::all());
+        $perusahaan_p = Perusahaan::all();
+        return view("dashboard.status0", compact("siswa", "perusahaan", "bidangperusahaan", "jurusan", "rayon", "rombel", "perusahaan_p"));
       }
       else if (Auth::user()->status==1 || Auth::user()->status==4) {
         return view("dashboard.status1or4");

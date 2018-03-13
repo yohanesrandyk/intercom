@@ -108,7 +108,7 @@ class SuratPengantarController extends Controller
         //
         $r = Surat::find(decrypt($id));
         $perusahaan = Perusahaan::Where('status','1')->orderBy('perusahaan')->get();
-        return view('surat.suratpengantar.print',compact('r','perusahaan'));
+        return view('surat.suratpengantar.edit',compact('r','perusahaan'));
     }
 
     /**

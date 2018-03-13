@@ -5,16 +5,16 @@ $record = explode(';',$r->isi);
     @section('breadcrumb')
     <div class="row wrapper border-bottom white-bg page-heading">
         <div class="col-lg-10">
-            <h2>Data Surat Permohonan</h2>
+            <h2>Edit Data Surat Permohonan</h2>
             <ol class="breadcrumb">
                 <li>
                     <a href="{{url('/')}}">Home</a>
                 </li>
                 <li>
-                    Surat
+                    <a href="{{url('/suratpermohonan')}}">Data Surat Permohonan</a>
                 </li>
                 <li class="active">
-                    <strong>Surat Permohonan</strong>
+                    <strong>Edit Data Surat Permohonan</strong>
                 </li>
             </ol>
         </div>
@@ -26,7 +26,7 @@ $record = explode(';',$r->isi);
     <div class="col-lg-12">
       <div class="ibox float-e-margins">
         <div class="ibox-title">
-            <h5>Form Surat Permohonan</h5>
+            <h5>Edit Data Surat Permohonan</h5>
         </div>
         <div class="ibox-content">
           <form class="form-horizontal m-t-md" method="POST">
@@ -114,7 +114,7 @@ $record = explode(';',$r->isi);
             <div class="form-group">
               <label class="col-xs-12 col-md-2 control-label"></label>
               <div class="col-sm-10">
-                  <input type="submit" value="Update" class="btn btn-danger btn-block">
+                  <input type="submit" value="Update" class="btn btn-primary btn-block">
               </div>
             </div>
           </form>

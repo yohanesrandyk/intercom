@@ -34,8 +34,7 @@
                                 <h5>Data Siswa</h5>
                             </div>
                             <div class="ibox-content">
-                                <h1 class="no-margins">2</h1>
-                                <div class="stat-percent font-bold text-success">100% <i class="fa fa-bolt"></i></div>
+                                <h1 class="no-margins">{{$siswa}}</h1>
                                 <small>Total siswa</small>
                             </div>
                         </div>
@@ -45,8 +44,7 @@
                                 <h5>Data Perusahaan</h5>
                             </div>
                             <div class="ibox-content">
-                                <h1 class="no-margins">2</h1>
-                                <div class="stat-percent font-bold text-success">100% <i class="fa fa-bolt"></i></div>
+                                <h1 class="no-margins">{{$perusahaan}}</h1>
                                 <small>Total perusahaan</small>
                             </div>
                         </div>
@@ -54,24 +52,11 @@
                     <div class="col-md-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <span class="label label-success pull-right">Monthly</span>
-                                <h5>Data User</h5>
+                                <h5>Data Bidang Perusahaan</h5>
                             </div>
                             <div class="ibox-content">
-                                <h1 class="no-margins">8</h1>
-                                <div class="stat-percent font-bold text-success">100% <i class="fa fa-bolt"></i></div>
-                                <small>Total user</small>
-                            </div>
-                        </div>
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <span class="label label-success pull-right">Monthly</span>
-                                <h5>Data Surat</h5>
-                            </div>
-                            <div class="ibox-content">
-                                <h1 class="no-margins">3</h1>
-                                <div class="stat-percent font-bold text-success">100% <i class="fa fa-bolt"></i></div>
-                                <small>Total surat</small>
+                                <h1 class="no-margins">{{$bidangperusahaan}}</h1>
+                                <small>Total Bidang Perusahaan</small>
                             </div>
                         </div>
                     </div>
@@ -85,7 +70,7 @@
                         <div class="row">
                             <div class="col-xs-4">
                                 <small class="stats-label">Jurusan</small>
-                                <h4>3</h4>
+                                <h4>{{$jurusan}}</h4>
                             </div>
                         </div>
                     </div>
@@ -93,7 +78,7 @@
                         <div class="row">
                             <div class="col-xs-4">
                                 <small class="stats-label">Rayon</small>
-                                <h4>12</h4>
+                                <h4>{{$rayon}}</h4>
                             </div>
                         </div>
                     </div>
@@ -101,7 +86,7 @@
                         <div class="row">
                             <div class="col-xs-4">
                                 <small class="stats-label">Rombel</small>
-                                <h4>10</h4>
+                                <h4>{{$rombel}}</h4>
                             </div>
                         </div>
                     </div>
@@ -133,14 +118,16 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
+                                                    @foreach($perusahaan_p as $data)
                                                     <tr>
                                                         <td class="text-center">1</td>
-                                                        <td>Auditsi
+                                                        <td>{{$data->perusahaan}}
                                                             </td>
-                                                        <td class="text-center small">Jakarta</td>
-                                                        <td class="text-center"><span class="label label-primary">16740</span></td>
+                                                        <td class="text-center small">{{$data->kota}}</td>
+                                                        <td class="text-center"><span class="label label-primary">{{$data->kode_pos}}</span></td>
 
                                                     </tr>
+                                                    @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>
