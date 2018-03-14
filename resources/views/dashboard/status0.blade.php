@@ -54,7 +54,7 @@
                           @endif
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-3">
                       <div class="widget style1 red-bg">
                           <div class="row">
@@ -117,7 +117,7 @@
                                   <i class="fa fa-bookmark fa-5x"></i>
                               </div>
                               <div class="col-xs-8 text-right">
-                                  <span> Total Bidang Perusahaan </span>
+                                  <span> Total Bidang Per. </span>
                                   <h2 class="font-bold">{{$bidangperusahaan}}</h2>
                               </div>
                           </div>
@@ -153,7 +153,7 @@
                         <div class="widget style1 navy-bg">
                             <div class="row">
                                 <div class="col-xs-4">
-                                    <i class="fa fa-university fa-5x"></i>
+                                    <i class="fa fa-home fa-5x"></i>
                                 </div>
                                 <div class="col-xs-8 text-right">
                                   <span> Total Rayon </span>
@@ -163,8 +163,8 @@
                         </div>
                       </div>
                     @endif
-                    
-                
+
+
     </div>
   </div>
 @endsection
