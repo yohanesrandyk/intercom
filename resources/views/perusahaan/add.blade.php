@@ -31,7 +31,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Bidang *</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="id_bidang">
+                    <select class="chosen-select form-control" name="id_bidang">
                         @foreach($data_bidang as $r)
                             <option value="{{$r->id_bidang}}">{{$r->bidangperusahaan}}</option>
                         @endforeach

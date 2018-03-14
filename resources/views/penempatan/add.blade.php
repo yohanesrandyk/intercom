@@ -50,7 +50,7 @@
                                             </dl>
 
                                             <div class="m-t-sm">
-                                                <a href="{{$thisperusahaan->website}}"><i class="fa fa-external-link"></i>{{$thisperusahaan->website}}</a>
+                                                <a target="_blank" href="{{url($thisperusahaan->website)}}"><i class="fa fa-external-link"></i>{{$thisperusahaan->website}}</a>
                                             </div>
                                         </td>
 
@@ -68,6 +68,11 @@
   <div class="ibox float-e-margins">
       <div class="ibox-title">
           <h5>Tabel Data Siswa</h5>
+          <div class="ibox-tools">
+            <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+                </a>
+              </div>
       </div>
       <div class="ibox-content">
         <div class="table-responsive">
@@ -99,7 +104,7 @@
   </tbody>
 </table>
 <div class="checkbox m-r-xs"><input type="checkbox" id="checkbox1" onclick="check_quo()"><label for="checkbox1">
-Select all</label></div>
+Pilih semua</label></div>
 </div>
 <button type="button" name="button" class="btn btn-primary" onclick="
   $('#siswa').val(arr_quo);
@@ -115,6 +120,11 @@ Select all</label></div>
   <div class="ibox float-e-margins">
       <div class="ibox-title">
           <h5>Tabel Data Siswa Pending</h5>
+          <div class="ibox-tools">
+            <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+                </a>
+              </div>
       </div>
       <div class="ibox-content">
         <div class="table-responsive">
@@ -145,7 +155,7 @@ Select all</label></div>
   </tbody>
 </table>
 <div class="checkbox m-r-xs"><input type="checkbox" id="checkbox2" onclick="check_tmp()"><label for="checkbox2">
-Select all</label></div>
+Pilih semua</label></div>
 </div>
 <button type="button" name="button" class="btn btn-primary" onclick="
   $('#siswa').val(arr_tmp);

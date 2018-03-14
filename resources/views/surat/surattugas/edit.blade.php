@@ -34,7 +34,7 @@ $record = explode(';',$r->isi);
             <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Perusahaan *</label>
                 <div class="col-md-10">
-                    <select class="form-control select2" name="perusahaan">
+                    <select class="form-control chosen-select" name="perusahaan">
                     	<option value="">Perusahaan</option>
                         @foreach($perusahaan as $datas)
                             <option value="{{$datas->id_perusahaan}}" {{$datas->id_perusahaan==$r->id_perusahaan?"selected":""}}>{{$datas->perusahaan}}</option>
@@ -45,7 +45,7 @@ $record = explode(';',$r->isi);
             <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Pembimbing PKL *</label>
                 <div class="col-md-10">
-                    <select class="form-control select2" name="namapemb">
+                    <select class="form-control chosen-select" name="namapemb">
                         <option value="">Pembimbing PKL</option>
                         @foreach($user as $datas)
                             <option value="{{$datas->id}}" {{$datas->id ==$record[0]?"selected":""}}>{{$datas->nama}}</option>
@@ -62,7 +62,7 @@ $record = explode(';',$r->isi);
             <div class="form-group">
                 <label class="col-xs-12 col-md-2 control-label">Tahun Pelajaran *</label>
                 <div class="col-sm-10">
-                    <select class="form-control select2" name="ajaran">
+                    <select class="form-control chosen-select" name="ajaran">
                         @for($i=2017; $i<=date('Y');$i++)
                             <?php
                             $thnawal = $i;

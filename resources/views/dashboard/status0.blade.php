@@ -117,7 +117,7 @@
                                   <i class="fa fa-bookmark fa-5x"></i>
                               </div>
                               <div class="col-xs-8 text-right">
-                                  <span> Total Bidang Perusahaan </span>
+                                  <span> Total Bidang Per. </span>
                                   <h2 class="font-bold">{{$bidangperusahaan}}</h2>
                               </div>
                           </div>

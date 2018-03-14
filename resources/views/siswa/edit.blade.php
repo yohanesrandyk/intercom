@@ -39,7 +39,7 @@
           <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label">Agama</label>
               <div class="col-sm-10">
-                <select class="select2 form-control" name="agama" required>
+                <select class="chosen-select form-control" name="agama" required>
                     <option value="" selected="">Pilih Agama</option>
                     <option value="Kristen" @if ($siswa->agama=="Kristen") selected @endif>Kristen</option>
                     <option value="Islam" @if ($siswa->agama=="Islam") selected @endif>Islam</option>

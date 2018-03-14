@@ -37,7 +37,7 @@
             <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Perusahaan *</label>
                 <div class="col-md-10">
-                    <select class="form-control select2" name="perusahaan">
+                    <select class="form-control chosen-select" name="perusahaan">
                     	<option value="">Perusahaan</option>
                         @foreach($perusahaan as $r)
                             <option value="{{$r->id_perusahaan}}">{{$r->perusahaan}}</option>
@@ -48,7 +48,7 @@
             <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Pembimbing PKL *</label>
                 <div class="col-md-10">
-                    <select class="form-control select2" name="namapemb">
+                    <select class="form-control chosen-select" name="namapemb">
                         <option value="">Pembimbing PKL</option>
                         @foreach($user as $r)
                             <option value="{{$r->id}}">{{$r->nama}}</option>
@@ -65,7 +65,7 @@
             <div class="form-group">
                 <label class="col-xs-12 col-md-2 control-label">Tahun Pelajaran *</label>
                 <div class="col-sm-10">
-                    <select class="form-control select2" name="ajaran">
+                    <select class="form-control chosen-select" name="ajaran">
                         @for($i=2017; $i<=date('Y');$i++)
                            	<option value="{{$i}} / {{$i+1}}">{{$i}} / {{$i+1}}</option>
                         @endfor
