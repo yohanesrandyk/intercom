@@ -16,6 +16,7 @@
     <link href="{{asset('css/plugins/clockpicker/clockpicker.css')}} "rel="stylesheet">
     <link href="{{asset('css/plugins/dualListbox/bootstrap-duallistbox.min.css')}}" rel="stylesheet">
 
+    <link href="{{asset('css/plugins/chosen/bootstrap-chosen.css')}}" rel="stylesheet">
     <link href="{{asset('css/plugins/select2/select2.min.css')}} "rel="stylesheet">
     <link href="{{asset('css/plugins/dataTables/datatables.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-notifications.min.css">
@@ -52,9 +53,11 @@
     <script src="{{asset('js/plugins/iCheck/icheck.min.js')}}"></script>
     <script src="{{asset('js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
     <script src="{{asset('js/plugins/select2/select2.full.min.js')}}"></script>
+    <script src="{{asset('js/plugins/chosen/chosen.jquery.js')}}"></script>
     <script>
 
             $(document).ready(function(){
+                $('.chosen-select').chosen({width: "100%"});
               $(".select2").select2();
                 $('.dataTables-example').DataTable({
                     "language": {

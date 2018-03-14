@@ -69,7 +69,7 @@
           <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label">Agama</label>
               <div class="col-sm-10">
-                <select class="select2 form-control" name="agama" required>
+                <select class="chosen-select form-control" name="agama" required>
                     <option value="" selected="">Pilih Agama</option>
                     <option value="Kristen" @if (old('agama')=="Kristen") selected @endif>Kristen</option>
                     <option value="Islam" @if (old('agama')=="Islam") selected @endif>Islam</option>
@@ -112,7 +112,7 @@
           <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Jurusan</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="jurusan" required="">
+                    <select class="chosen-select form-control" name="jurusan" required="">
                       <option value="" selected="">Pilih Jurusan</option>
                       @foreach($jurusan as $data)
                         <option value="{{$data->id_jurusan}}" @if (old('jurusan') == $data->id_jurusan) Selected @endif>{{$data->jurusan}}</option>
@@ -123,7 +123,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Rombel</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="rombel"  required="">
+                    <select class="chosen-select form-control" name="rombel"  required="">
                       <option value="" selected="">Pilih Rombel</option>
                       @foreach($rombel as $data)
                         <option value="{{$data->id_rombel}}" @if (old('rombel') == $data->id_rombel) Selected @endif>{{$data->rombel}}</option>
@@ -134,7 +134,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Rayon</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="rayon" required="">
+                    <select class="chosen-select form-control" name="rayon" required="">
                       <option value="" selected="">Pilih Rayon</option>
                       @foreach($rayon as $data)
                         <option value="{{$data->id_rayon}}" @if (old('rayon') == $data->id_rayon) Selected @endif>{{$data->rayon}}</option>

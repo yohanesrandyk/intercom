@@ -37,7 +37,7 @@
             <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Perusahaan *</label>
                 <div class="col-md-10">
-                    <select class="form-control select2" name="perusahaan">
+                    <select class="form-control chosen-select" name="perusahaan">
                     	<option value="">Perusahaan</option>
                         @foreach($perusahaan as $r)
                             <option value="{{$r->id_perusahaan}}">{{$r->perusahaan}}</option>

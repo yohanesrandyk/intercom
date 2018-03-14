@@ -37,7 +37,7 @@
             <div class="form-group">
                 <label class="col-md-2 col-xs-12 control-label">Perusahaan *</label>
                 <div class="col-md-10">
-                    <select class="form-control select2" name="perusahaan">
+                    <select class="form-control chosen-select" name="perusahaan">
                     	<option value="">Perusahaan</option>
                         @foreach($perusahaan as $r)
                             <option value="{{$r->id_perusahaan}}">{{$r->perusahaan}}</option>
@@ -55,7 +55,7 @@
             <div class="form-group">
                 <label class="col-xs-12 col-md-2 control-label">Waktu ( Minggu ) *</label>
                 <div class="col-sm-10">
-                    <select class="form-control select2" name="minggu">
+                    <select class="form-control chosen-select" name="minggu">
                         @for($i=1; $i<=48;$i++)
                         	@if($i % 7 == 0)
                             	<option value="{{$i}}">{{$i}}</option>
@@ -67,7 +67,7 @@
             <div class="form-group xs-hidden">
                 <label class="col-xs-12 col-md-2 control-label">Waktu ( Bulan ) *</label>
                 <div class="col-sm-3">
-                    <select class="form-control select2" name="awal">
+                    <select class="form-control chosen-select" name="awal">
                     	<option>Mulai</option>
                         @for($i=0; $i<count($bulan);$i++)
                             	<option value="{{$bulan[$i]}}">{{$bulan[$i]}}</option>
@@ -75,7 +75,7 @@
                     </select>
                 </div>
                 <div class="col-sm-3 xs-hidden">
-                    <select class="form-control select2" name="akhir">
+                    <select class="form-control chosen-select" name="akhir">
                     	<option>Akhir</option>
                         @for($i=0; $i<count($bulan);$i++)
                             	<option value="{{$bulan[$i]}}">{{$bulan[$i]}}</option>
@@ -83,7 +83,7 @@
                     </select>
                 </div>
                 <div class="col-sm-3">
-                    <select class="form-control select2" name="tahun">
+                    <select class="form-control chosen-select" name="tahun">
                     	<option>Tahun</option>
                         @for($i=2017; $i<=date('Y');$i++)
                             	<option value="{{$i}}">{{$i}}</option>

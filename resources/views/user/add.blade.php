@@ -83,7 +83,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Role *</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="role" required="" onchange="
+                    <select class="chosen-select form-control" name="role" required="" onchange="
                       if(this.value == 2){
                         $('#jurusan').prop('disabled', false);
                         $('#rayon').prop('disabled', true);
@@ -114,7 +114,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Jurusan</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="jurusan" id="jurusan" disabled="">
+                    <select class="chosen-select form-control" name="jurusan" id="jurusan" disabled="">
                       <option value="" selected="">Pilih Jurusan</option>
                       @foreach($jurusan as $data)
                         <option value="{{$data->id_jurusan}}" @if($data->id_jurusan==old('jurusan')) selected @endif>{{$data->jurusan}}</option>
@@ -125,7 +125,7 @@
             <div class="form-group">
                 <label class="col-sm-2 col-sm-2 control-label">Rayon</label>
                 <div class="col-sm-10">
-                    <select class="select2 form-control" name="rayon" id="rayon" disabled="">
+                    <select class="chosen-select form-control" name="rayon" id="rayon" disabled="">
                       <option value="" selected="">Pilih Rayon</option>
                       @foreach($rayon as $data)
                         <option value="{{$data->id_rayon}}" @if($data->id_rayon==old('rayon')) selected @endif>{{$data->rayon}}</option>

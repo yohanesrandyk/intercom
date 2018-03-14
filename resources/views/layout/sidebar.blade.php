@@ -36,57 +36,55 @@
                     IC
                 </div>
             </li>
-            <li>
+            <li class="{{ (Request::is('home*')) ? 'active' : ' ' }}">
                 <a href="{{url('/home')}}"><i class="fa fa-th-large"></i><span class="nav-label">Home</span></a>
             </li>
             @if (Auth::user()->id_role == 1 || Auth::user()->id_role == 2 || Auth::user()->id_role == 4)
-            <li>
+            <li class="{{ (Request::is('siswa*')) ? 'active' : ' ' }}">
                 <a href="{{url('siswa')}}"><i class="fa fa-users"></i><span class="nav-label">Daftar Siswa</span></a>
             </li>
             @endif
             @if (Auth::user()->id_role == 1)
-            <li>
+            <li class="{{ Request::is('suratpermohonan*') || Request::is('suratpengantar*') || Request::is('surattugas*') ? 'active' : ' ' }}">
                 <a href=""><i class="fa fa-envelope-o"></i> <span class="nav-label">Daftar Surat</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="{{url('suratpermohonan')}}">Surat Permohonan</a></li>
-                    <li><a href="{{url('suratpengantar')}}">Surat Pengantar</a></li>
-                    <li><a href="{{url('surattugas')}}">Surat Tugas</a></li>
-                    <!-- <li><a href="suratbuktikedatangan">Surat Bukti Kedatangan</a></li>
-                    <li><a href="suratucapanterimakasih">Surat Ucapan Terimakasih</a></li> -->
+                    <li class="{{ Request::is('suratpermohonan*') ? 'active' : ' ' }}"><a href="{{url('suratpermohonan')}}">Surat Permohonan</a></li>
+                    <li class="{{ Request::is('suratpengantar*') ? 'active' : ' ' }}"><a href="{{url('suratpengantar')}}">Surat Pengantar</a></li>
+                    <li class="{{ Request::is('surattugas*') ? 'active' : ' ' }}"><a href="{{url('surattugas')}}">Surat Tugas</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="{{ (Request::is('user*')) ? 'active' : ' ' }}">
                 <a href="{{url('user')}}"><i class="fa fa-user"></i><span class="nav-label">Daftar User</span></a>
             </li>
-            <li>
+            <li class="{{ (Request::is('perusahaan*')) ? 'active' : ' ' }}">
                 <a href="{{url('perusahaan')}}"><i class="fa fa-building-o"></i><span class="nav-label">Perusahaan</span></a>
             </li>
-            <li>
+            <li class="{{ (Request::is('referensi*')) ? 'active' : ' ' }}">
                 <a href="{{url('referensi')}}"><i class="fa fa-archive"></i><span class="nav-label">Referensi Siswa</span></a>
             </li>
-            <li>
+            <li class="{{ (Request::is('bidangperusahaan*')) ? 'active' : ' ' }}">
                 <a href="{{url('bidangperusahaan')}}"><i class="fa fa-bookmark"></i><span class="nav-label">Bidang Perusahaan</span></a>
             </li>
             @endif
             @if(Auth::user()->id_role == 2)
-            <li>
+            <li class="{{ (Request::is('penempatan*')) ? 'active' : ' ' }}">
                 <a href="{{url('penempatan')}}"><i class="fa fa-map-marker"></i><span class="nav-label">Penempatan</span></a>
             </li>
             @endif
             @if (Auth::user()->id_role == 2 || Auth::user()->id_role > 3)
-            <li>
+            <li class="{{ (Request::is('persyaratan*')) ? 'active' : ' ' }}">
                 <a href="{{url('persyaratan')}}"><i class="fa fa-check"></i><span class="nav-label">Persyaratan Siswa</span></a>
             </li>
             @endif
             @if (Auth::user()->status == 5)
-            <li>
-                <a href="{{url('jurnal')}}"><i class="fa fa-book"></i><span class="nav-label">Jurnal</span></a>
+            <li class="{{ (Request::is('jurnal*')) ? 'active' : ' ' }}">
+                <a href="{{url('jurnal')}}"><i class="fa fa-book"></i><span class="nav-label">Jurnal Harian</span></a>
             </li>
-            <li>
-                <a href="{{url('kehadiran')}}"><i class="fa fa-check"></i><span class="nav-label">Kehadiran</span><span class="label label-info pull-right"></span></a>
+            <li class="{{ (Request::is('kehadiran*')) ? 'active' : ' ' }}">
+                <a href="{{url('kehadiran')}}"><i class="fa fa-check"></i><span class="nav-label">Absensi Kehadiran</span><span class="label label-info pull-right"></span></a>
             </li>
             @endif
-            <li>
+            <li class="{{ (Request::is('pengembang*')) ? 'active' : ' ' }}">
                 <a href="{{url('pengembang')}}"><i class="fa fa-gears"></i><span class="nav-label">Pengembang</span><span class="label label-info pull-right"></span></a>
             </li>
         </ul>
