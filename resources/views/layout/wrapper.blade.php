@@ -41,6 +41,14 @@
               @yield('content')
             </div>
         </div>
+        <div class="footer">
+            <!-- <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div> -->
+            <div>
+                <strong>Copyright</strong> Romusha Team &copy; 2017-2018
+            </div>
+        </div>
       </div>
     </div>
     <script src="{{asset('js/jquery-3.1.1.min.js')}}"></script>
@@ -67,7 +75,7 @@
             if (date.getMonth() == 2 && date.getDate() == 15) {
             var i = 0;
             var elem = $('[name=trigger_animation]');
-            
+
             function loop(){
                 setTimeout(function(){
                         $('[name=trigger_animation]:eq('+i+')').removeAttr('class').attr('class', '');
