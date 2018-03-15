@@ -71,10 +71,13 @@
               <div class="col-sm-10">
                 <select class="chosen-select form-control" name="agama" required>
                     <option value="" selected="">Pilih Agama</option>
-                    <option value="Kristen" @if (old('agama')=="Kristen") selected @endif>Kristen</option>
                     <option value="Islam" @if (old('agama')=="Islam") selected @endif>Islam</option>
+                    <option value="Kristen Protestan" @if (old('agama')=="Kristen Protestan") selected @endif>Kristen Protestan</option>
+                    <option value="Kristen Katolik" @if (old('agama')=="Kristen Katolik") selected @endif>Kristen Katolik</option>
+                    <option value="Kristen Ortodoks" @if (old('agama')=="Kristen Ortodoks") selected @endif>Kristen Ortodoks</option>
                     <option value="Hindu" @if (old('agama')=="Hindu") selected @endif>Hindu</option>
                     <option value="Buddha" @if (old('agama')=="Buddha") selected @endif>Buddha</option>
+                    <option value="Konghucu" @if (old('agama')=="Konghucu") selected @endif>Konghucu</option>
                 </select>
               </div>
           </div>

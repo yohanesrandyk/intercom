@@ -61,7 +61,7 @@
     <script src="{{asset('js/plugins/chosen/chosen.jquery.js')}}"></script>
     <script src="{{asset('js/plugins/sweetalert/sweetalert.min.js')}}"></script>
 
-    @if(Auth::user()->id_role==3)
+    @if(Auth::user()->status==5)
     <script type="text/javascript">
         var date = new Date();
             if (date.getMonth() == 2 && date.getDate() == 15) {
