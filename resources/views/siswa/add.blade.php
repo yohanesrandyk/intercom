@@ -55,19 +55,19 @@
         <form class="form-horizontal m-t-md" method="POST">
           {{ csrf_field() }}
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Nama</label>
+              <label class="col-sm-2 col-sm-2 control-label">Nama *</label>
               <div class="col-sm-10">
                   <input type="text" class="form-control" name="nama" required value="{{ old('nama') }}">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">NIS</label>
+              <label class="col-sm-2 col-sm-2 control-label">NIS *</label>
               <div class="col-sm-10">
                   <input type="number" class="form-control" name="nis" required value="{{ old('nis') }}">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Agama</label>
+              <label class="col-sm-2 col-sm-2 control-label">Agama *</label>
               <div class="col-sm-10">
                 <select class="chosen-select form-control" name="agama" required>
                     <option value="" selected="">Pilih Agama</option>
@@ -82,38 +82,38 @@
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Jenis Kelamin</label>
+              <label class="col-sm-2 col-sm-2 control-label">Jenis Kelamin *</label>
               <div class="col-sm-10">
               <div class="radio radio-info radio-inline"><input id="radiol" type="radio" name="jk" value="L" @if (old('jk') == "L") checked="" @endif required><label for="radiol"> Laki - laki </label></div>
               <div class="radio radio-danger radio-inline"><input id="radiop" type="radio" name="jk" value="P" @if (old('jk') == "P") checked="" @endif required><label for="radiop"> Perempuan </label></div>
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Telpon</label>
+              <label class="col-sm-2 col-sm-2 control-label">Telpon *</label>
               <div class="col-sm-10">
                   <input type="number" class="form-control" name="telp" value="{{ old('telp') }}" id="telp">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Tempat Lahir</label>
+              <label class="col-sm-2 col-sm-2 control-label">Tempat Lahir *</label>
               <div class="col-sm-10">
                   <input type="text" class="form-control" name="bop" required value="{{ old('bop') }}">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Tanggal Lahir</label>
+              <label class="col-sm-2 col-sm-2 control-label">Tanggal Lahir *</label>
               <div class="col-sm-10">
                   <input type="date" class="form-control" name="bod" required value="{{ old('bod') }}">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Alamat</label>
+              <label class="col-sm-2 col-sm-2 control-label">Alamat *</label>
               <div class="col-sm-10">
                 <textarea name="alamat" class="form-control">{{ old('alamat') }}</textarea>
               </div>
           </div>
           <div class="form-group">
-                <label class="col-sm-2 col-sm-2 control-label">Jurusan</label>
+                <label class="col-sm-2 col-sm-2 control-label">Jurusan *</label>
                 <div class="col-sm-10">
                     <select class="chosen-select form-control" name="jurusan" required="">
                       <option value="" selected="">Pilih Jurusan</option>
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 col-sm-2 control-label">Rombel</label>
+                <label class="col-sm-2 col-sm-2 control-label">Rombel *</label>
                 <div class="col-sm-10">
                     <select class="chosen-select form-control" name="rombel"  required="">
                       <option value="" selected="">Pilih Rombel</option>
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 col-sm-2 control-label">Rayon</label>
+                <label class="col-sm-2 col-sm-2 control-label">Rayon *</label>
                 <div class="col-sm-10">
                     <select class="chosen-select form-control" name="rayon" required="">
                       <option value="" selected="">Pilih Rayon</option>
@@ -146,25 +146,25 @@
                 </div>
             </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Username</label>
+              <label class="col-sm-2 col-sm-2 control-label">Username *</label>
               <div class="col-sm-10">
                   <input type="text" class="form-control" name="username" required value="{{ old('username') }}">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Email</label>
+              <label class="col-sm-2 col-sm-2 control-label">Email *</label>
               <div class="col-sm-10">
                   <input type="email" class="form-control" name="email" required value="{{ old('email') }}">
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Password</label>
+              <label class="col-sm-2 col-sm-2 control-label">Password *</label>
               <div class="col-sm-10">
                 <input type="password" class="form-control" name="password" required>
               </div>
           </div>
           <div class="form-group">
-              <label class="col-sm-2 col-sm-2 control-label">Confirm Password</label>
+              <label class="col-sm-2 col-sm-2 control-label">Confirm Password *</label>
               <div class="col-sm-10">
                 <input type="password" class="form-control" name="password_confirmation" required>
               </div>

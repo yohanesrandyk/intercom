@@ -33,7 +33,7 @@
                 <th>Jurusan</th>
                 <th>Rayon</th>
                 @if(Auth::user()->id_role==5)
-                <th>Pramuka</th>
+                <th>Bantara</th>
                 @endif
                 @if(Auth::user()->id_role==4)
                 <th>Nilai</th>
