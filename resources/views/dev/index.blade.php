@@ -33,11 +33,11 @@
 <h2 class="font-bold no-margins">Dicki Fadilah Fajar</h2>
 <small>Rekayasa Perangkat Lunak</small></div>
 <img src="{{ asset('img/wall2.jpg')}}" class="img-circle circle-border m-b-md" alt="profile" style="width:120px;height:120px"><div>
-<span>RPL XII - 2</span> | <span>Wikrama 1</span> | <span>00 Mei 2000</span></div></div><div class="widget-text-box">
+<span>RPL XII - 2</span> | <span>Wikrama 1</span> | <span>11 Februari 2000</span></div></div><div class="widget-text-box">
 <h4 class="media-heading">Kata Pengembang</h4>
 <p>Selamat menempuh magang di perusahaan kalian, dan jika terdapat bug dalam program harap menghubungi CP yang tersedia.</p>
 <div class="text-right">
-<a class="btn btn-xs btn-danger"><i class="fa fa-envelope"></i> @randykurniayanto</a></div></div></div>
+<a class="btn btn-xs btn-danger"><i class="fa fa-instagram"></i> @dffajar</a></div></div></div>
 
 <div class="col-lg-4"><div class="widget-head-color-box yellow-bg p-lg text-center"><div class="m-b-md">
 <h2 class="font-bold no-margins">Anita Yuliani</h2>
@@ -118,7 +118,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 16 Mei 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -132,9 +132,9 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 00 Jan 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
-  
+
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
   <img alt="image" class="img-responsive" src="{{ asset('img/wall3.jpg')}}">
   </div><div class="ibox-content profile-content"><h4>
@@ -146,7 +146,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 00 Jan 1999</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -160,7 +160,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 00 Jan 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -174,7 +174,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 16 Mei 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -188,7 +188,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 16 Mei 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -202,7 +202,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 16 Mei 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -216,7 +216,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 16 Mei 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div>
 
   <div class="col-md-4"><div class="ibox float-e-margins"><div><div class="ibox-content no-padding border-left-right">
@@ -230,7 +230,7 @@
   <td>20</td></tr><tr><td><strong>Kelahiran</strong></td>
   <td>Bogor, 16 Mei 2000</td></tr></tbody></table></p><br>
 
-  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i> 
+  <div class="user-button"><div class="row"><div class="col-md-12"><button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-instagram"></i>
   @yohanesrandy</button></div></div></div></div></div></div></div> -->
 
 @endsection
