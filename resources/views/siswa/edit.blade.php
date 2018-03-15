@@ -41,10 +41,13 @@
               <div class="col-sm-10">
                 <select class="chosen-select form-control" name="agama" required>
                     <option value="" selected="">Pilih Agama</option>
-                    <option value="Kristen" @if ($siswa->agama=="Kristen") selected @endif>Kristen</option>
                     <option value="Islam" @if ($siswa->agama=="Islam") selected @endif>Islam</option>
+                    <option value="Kristen Protestan" @if ($siswa->agama=="Kristen Protestan") selected @endif>Kristen Protestan</option>
+                    <option value="Kristen Katolik" @if ($siswa->agama=="Kristen Katolik") selected @endif>Kristen Katolik</option>
+                    <option value="Kristen Ortodoks" @if ($siswa->agama=="Kristen Ortodoks") selected @endif>Kristen Ortodoks</option>
                     <option value="Hindu" @if ($siswa->agama=="Hindu") selected @endif>Hindu</option>
                     <option value="Buddha" @if ($siswa->agama=="Buddha") selected @endif>Buddha</option>
+                    <option value="Konghucu" @if ($siswa->agama=="Konghucu") selected @endif>Konghucu</option>
                 </select>
               </div>
           </div>
