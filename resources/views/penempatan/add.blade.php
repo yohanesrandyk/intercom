@@ -55,7 +55,7 @@
                                         </td>
 
                                         <td colspan="3">
-                                            <strong>Siswa Terverifikasi : </strong>3
+                                            <!-- <strong>Siswa Terverifikasi : </strong>3 -->
                                         </td>
                                     </tr>
                                     </tbody>

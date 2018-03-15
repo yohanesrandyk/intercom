@@ -42,8 +42,8 @@
               </thead>
               <tbody>
                 @foreach ($user as $data)
-                  <tr onclick="document.getElementById('{{$data->id}}').click();">
-                    <a id="{{$data->id}}" href="user/e/{{$data->id}}" style="display:none"></a>
+                  <tr ondblclick="document.getElementById('{{$data->id}}').click();">
+                    <a id="{{$data->id}}" href="user/e/{{encrypt($data->id)}}" style="display:none"></a>
                     <td>{{$data->nama}}</td>
                     <td>{{$data->email}}</td>
                     <td>{{$data->telp}}</td>
@@ -55,7 +55,7 @@
                         @endif
                       @endforeach
                     </td>
-                    <td><a href="user/del/{{$data->id}}"><i class="fa fa-trash"></i></a></td>
+                    <td><a href="user/del/{{encrypt($data->id)}}" onclick="return confirm('Anda yakin ingin menghapus user ?')"><i class="fa fa-trash text-danger"></i></a></td>
                   </tr>
                 @endforeach
               </tbody>

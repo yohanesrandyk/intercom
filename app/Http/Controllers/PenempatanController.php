@@ -99,6 +99,7 @@ class PenempatanController extends Controller
     }
 
     public function create($id){
+      $id = decrypt($id);
       $jurusan = Kaprog::where('id', Auth::user()->id)->first()->id_jurusan;
       $area = Perusahaan::where('id_perusahaan', $id)->first()->id_area;
       $siswa_get = Siswa::whereNull('id_perusahaan')->where([['id_area', $area], ['id_jurusan', $jurusan]])->get();$siswa_quo = [];$x = 1;

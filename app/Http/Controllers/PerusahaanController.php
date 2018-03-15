@@ -79,6 +79,7 @@ class PerusahaanController extends Controller
     public function edit($id)
     {
         //
+        $id = decrypt($id);
         $data_bidang = BidangPerusahaan::OrderBy('bidangperusahaan','asc')->get();
         $r = Perusahaan::find($id);
         return view('perusahaan.edit',compact('r','data_bidang'));
@@ -94,6 +95,7 @@ class PerusahaanController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $id = decrypt($id);
         $data = Perusahaan::find($id);
 
         $data->id_bidang = $request->input('id_bidang');
@@ -120,6 +122,7 @@ class PerusahaanController extends Controller
     public function destroy($id)
     {
         //
+        $id = decrypt($id);
         $data = Perusahaan::find($id);
         $data->delete();
         Session::flash('message', 'Data Berhasil Dihapus'); 

@@ -51,11 +51,11 @@
                     <td>{{$r->tgl_keluar}}</td>
                     <td>
                       <a id="{{$r->id_surat}}" href="{{url('surattugas/e/'.encrypt($r->id_surat))}}" style="display: none"></a>
-                      <a href="{{url('surattugas/del/'.encrypt($r->id_surat))}}" onclick="return confirm('Surat dengan nomer {{$r->nomersurat}} akan dihapus ?')"><i class="fa fa-trash"></i></a>|
+                      <a href="{{url('surattugas/del/'.encrypt($r->id_surat))}}" onclick="return confirm('Surat dengan nomer {{$r->nomersurat}} akan dihapus ?')"><i class="fa fa-trash text-danger"></i></a>|
                       <a onclick="
                         var targURL = '{{url("surattugas/print/".encrypt($r->id_surat))}}';
                         var newTab = window.open (targURL, '_blank');
-                      "><i class="fa fa-print"></i></a>
+                      "><i class="fa fa-print text-info"></i></a>
                     </td>
                   </tr>
                   @endforeach

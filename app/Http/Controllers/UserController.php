@@ -81,10 +81,12 @@ class UserController extends Controller
       return redirect("user");
     }
     public function edit($id){
+      $id = decrypt($id);
       $user = User::where("id", $id)->first();
       return view("user.edit", compact("user"));
     }
     public function update(Request $req, $id){
+      $id = decrypt($id);
       User::where("id", $id)->update([
         "nama" => $req->nama,
         "telp" => $req->telp,
@@ -95,6 +97,7 @@ class UserController extends Controller
       return redirect("user");
     }
     public function destroy($id){
+      $id = decrypt($id);
       if (User::where("id", $id)->first()->id_role==2) {
         Kaprog::where("id", $id)->delete();
       }else if (User::where("id", $id)->first()->id_role==4) {

@@ -42,8 +42,8 @@
               </thead>
               <tbody>
                 @foreach ($perusahaan as $data)
-                  <tr onclick="document.getElementById('{{$data->id_perusahaan}}').click();">
-                    <a id="{{$data->id_perusahaan}}" href="penempatan/add/{{$data->id_perusahaan}}" style="display:none"></a>
+                  <tr ondblclick="document.getElementById('{{$data->id_perusahaan}}').click();">
+                    <a id="{{$data->id_perusahaan}}" href="penempatan/add/{{encrypt($data->id_perusahaan)}}" style="display:none"></a>
                     <td>{{$data->perusahaan}}</td>
                     <td>{{$data->area}}</td>
                     <td>{{$data->telp}}</td>

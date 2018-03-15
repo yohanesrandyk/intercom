@@ -39,6 +39,7 @@ class PersyaratanController extends Controller
      */
     //ongoing
     public function index2($id){
+        $id = decrypt($id);
         $res = Persyaratan::where("nis", $id)->first();
         $siswa = Siswa::where("nis", $id)->first();
         $user = User::where("id", $siswa->id)->first();

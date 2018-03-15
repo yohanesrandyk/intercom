@@ -56,13 +56,13 @@
                 @foreach ($siswa as $data)
                   <tr 
                   @if(Auth::user()->id_role==1) 
-                  onclick="document.getElementById('{{$data->id}}').click();"
+                  ondblclick="document.getElementById('{{$data->id}}').click();"
                   @elseif(Auth::user()->id_role == 2 || Auth::user()->id_role == 4)
-                  onclick="document.getElementById('syarat{{$data->id}}').click();" 
+                  ondblclick="document.getElementById('syarat{{$data->id}}').click();" 
                   @endif
                   >
-                    <a id="syarat{{$data->id}}" href="siswa/{{$data->nis}}" style="display:none"></a>
-                    <a id="{{$data->id}}" href="siswa/e/{{$data->id}}" style="display:none"></a>
+                    <a id="syarat{{$data->id}}" href="siswa/{{encrypt($data->nis)}}" style="display:none"></a>
+                    <a id="{{$data->id}}" href="siswa/e/{{encrypt($data->id)}}" style="display:none"></a>
                     <td>{{$data->nis}}</td>
                     <td>{{$data->nama}}</td>
                     <td>{{$data->rayon}}</td>
@@ -72,7 +72,7 @@
                     <td>{{$data->email}}</td>
                     <td>{{$data->telp}}</td>
                     <td>{{$data->alamat}}</td>
-                    <td><a href="siswa/del/{{$data->id}}"><i class="fa fa-trash"></i></a></td>
+                    <td><a href="siswa/del/{{encrypt($data->id)}}" onclick="return confirm('Anda yakin ingin menghapus siswa ?')"><i class="fa fa-trash text-danger"></i></a></td>
                   </tr>
                 @endforeach
               </tbody>

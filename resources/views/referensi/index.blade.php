@@ -24,7 +24,7 @@
         <div class="ibox-title"><h5>Tabel Data Rayon</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
-              <i class="fa fa-chevron-down"></i>
+              <i class="fa fa-chevron-up"></i>
             </a>
           </div>
         </div>
@@ -52,7 +52,7 @@
         <div class="ibox-title"><h5>Tabel Data Rombel</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
-              <i class="fa fa-chevron-down"></i>
+              <i class="fa fa-chevron-up"></i>
             </a>
           </div>
         </div>
@@ -80,7 +80,7 @@
         <div class="ibox-title"><h5>Tabel Data Jurusan</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
-              <i class="fa fa-chevron-down"></i>
+              <i class="fa fa-chevron-up"></i>
             </a>
           </div>
         </div>

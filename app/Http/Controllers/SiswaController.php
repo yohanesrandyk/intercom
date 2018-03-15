@@ -113,6 +113,7 @@ class SiswaController extends Controller
       return redirect("siswa");
     }
     public function edit($id){
+      $id = decrypt($id);
       $siswa = new siswaObj();
       $data_siswa = Siswa::where("id", $id)->first();
       $data_user = User::where("id", $id)->first();
@@ -130,6 +131,7 @@ class SiswaController extends Controller
       return view("siswa.edit", compact("siswa"));
     }
     public function update(Request $req, $id){
+      $id = decrypt($id);
       User::where("id", $id)->update([
         "nama" => $req->nama,
         "telp" => $req->telp,
@@ -144,6 +146,7 @@ class SiswaController extends Controller
       return redirect("siswa");
     }
     public function destroy($id){
+      $id = decrypt($id);
       Jurnal::where("id", $id)->delete();
       Kehadiran::where("id", $id)->delete();
       Persyaratan::where("nis", Siswa::where("id", $id)->first()->nis)->delete();
