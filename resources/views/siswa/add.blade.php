@@ -63,7 +63,7 @@
           <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label">NIS *</label>
               <div class="col-sm-10">
-                  <input type="number" class="form-control" name="nis" required value="{{ old('nis') }}">
+                  <input type="text" class="form-control" data-mask="99999999" name="nis" required value="{{ old('nis') }}">
               </div>
           </div>
           <div class="form-group">
@@ -88,13 +88,13 @@
           <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label">Telpon *</label>
               <div class="col-sm-10">
-                  <input type="number" class="form-control" name="telp" value="{{ old('telp') }}" id="telp">
+                  <input type="text" class="form-control" maxlength="15" name="telp" value="{{ old('telp') }}" id="telp">
               </div>
           </div>
           <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label">Tempat Lahir *</label>
               <div class="col-sm-10">
-                  <input type="text" class="form-control" name="bop" required value="{{ old('bop') }}">
+                  <input type="text" class="form-control" maxlength="50" name="bop" required value="{{ old('bop') }}">
               </div>
           </div>
           <div class="form-group">

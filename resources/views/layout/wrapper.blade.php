@@ -68,6 +68,7 @@
     <script src="{{asset('js/plugins/select2/select2.full.min.js')}}"></script>
     <script src="{{asset('js/plugins/chosen/chosen.jquery.js')}}"></script>
     <script src="{{asset('js/plugins/sweetalert/sweetalert.min.js')}}"></script>
+    <script src="{{asset('js/plugins/jasny/jasny-bootstrap.min.js')}}"></script>
 
     @if(Auth::user()->id_role==3)
     <script type="text/javascript">
