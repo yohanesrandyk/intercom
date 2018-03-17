@@ -27,7 +27,7 @@
         }
     </style>
   </head>
-  <body class="pace-done">
+  <body class="pace-done fixed-sidebar">
     <div id="wrapper">
       @include('layout.sidebar')
       <div id="page-wrapper" class="gray-bg">
