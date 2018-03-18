@@ -8,7 +8,7 @@
                 </li>
     <li>
       <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-        <i class="fa fa-sign-out"></i> Log out
+        <i class="fa fa-sign-out"></i> Keluar
       </a>
     </li>
   </ul>
