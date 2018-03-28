@@ -115,7 +115,7 @@ class DashboardController extends Controller
         return view("dashboard.status1or4");
       }
       if(Auth::user()->status==2){
-        return (new PersyaratanController)->index2(Siswa::where("id", Auth::user()->id)->first()->nis);
+        return (new PersyaratanController)->index2(encrypt(Siswa::where("id", Auth::user()->id)->first()->nis));
       }else if (Auth::user()->status==3) {
         $siswa = Siswa::where("id", Auth::user()->id)->first();
         $rayon = Rayon::where("id_rayon", $siswa->id_rayon)->first();

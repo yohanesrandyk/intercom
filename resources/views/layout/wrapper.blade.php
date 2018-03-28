@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>InterCom</title>
+    <title>inter.com</title>
     <link rel="shortcut icon" href="{{asset('img/icons/icon.ico')}}">
     <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet">
     <link href="{{asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
@@ -51,20 +51,23 @@
         </div>
       </div>
     </div>
+        
+    @if (Request::is('permainan/*'))
+    @else
+    <script src="{{asset('js/plugins/pace/pace.min.js')}}"></script>
     <script src="{{asset('js/jquery-3.1.1.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
-    <script src="{{asset('js/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
+    @endif
+    
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/plugins/dataTables/datatables.min.js')}}"></script>
 
     <!-- Custom and plugin javascript -->
     <script src="{{asset('js/inspinia.js')}}"></script>
-    <script src="{{asset('js/plugins/pace/pace.min.js')}}"></script>
     <script src="{{asset('js/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
     <script src="{{asset('js/plugins/datapicker/bootstrap-datepicker.js')}}"></script>
     <script src="{{asset('js/plugins/switchery/switchery.js')}}"></script>
     <script src="{{asset('js/plugins/iCheck/icheck.min.js')}}"></script>
-    <script src="{{asset('js/plugins/metisMenu/jquery.metisMenu.js')}}"></script>
     <script src="{{asset('js/plugins/select2/select2.full.min.js')}}"></script>
     <script src="{{asset('js/plugins/chosen/chosen.jquery.js')}}"></script>
     <script src="{{asset('js/plugins/sweetalert/sweetalert.min.js')}}"></script>
@@ -73,7 +76,7 @@
     @if(Auth::user()->status==5)
     <script type="text/javascript">
         var date = new Date();
-            if (date.getMonth() == 2 && date.getDate() == 15) {
+            if (date.getMonth() == 7 && date.getDate() == 17) {
             var i = 0;
             var elem = $('[name=trigger_animation]');
 

@@ -23,7 +23,7 @@
             <div class="form-group">
               <label class="col-sm-2 col-sm-2 control-label"></label>
               <div class="col-sm-10">
-                  <input type="submit" value="Simpan" class="btn btn-success btn-block">
+                  <input type="submit" value="Simpan" class="btn btn-primary btn-block">
               </div>
             </div>
           </form>

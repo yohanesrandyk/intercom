@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>InterCom</title>
+    <title>inter.com</title>
     <link rel="shortcut icon" href="{{asset('img/icons/icon.ico')}}">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
@@ -20,7 +20,7 @@
         <div>
             <div>
 
-                <h1 class="logo-name">IC</h1>
+                <h1 class="logo-name">I</h1>
 
             </div><br><br>
             <!-- <p>Please Login.</p> -->
@@ -41,7 +41,7 @@
                 {{-- <p class="text-muted text-center"><small>Do not have an account?</small></p>
                 <a class="btn btn-sm btn-white btn-block" href="register.html">Create an account</a> --}}
             </form>
-            <p class="m-t"> <small>InterCom App by Romusha Team &copy; 2018</small> </p>
+            <p class="m-t"> <small>inter.com App by Romusha Team &copy; 2018</small> </p>
         </div>
     </div>
 

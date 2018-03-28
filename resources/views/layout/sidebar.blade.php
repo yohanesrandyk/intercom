@@ -33,7 +33,7 @@
                   </a>
                 </div>
                 <div class="logo-element">
-                    IC
+                    I
                 </div>
             </li>
             <li class="{{ (Request::is('home*')) ? 'active' : ' ' }}">
@@ -84,6 +84,9 @@
                 <a href="{{url('kehadiran')}}"><i class="fa fa-check"></i><span class="nav-label">Absensi Kehadiran</span><span class="label label-info pull-right"></span></a>
             </li>
             @endif
+            <li class="special_link">
+                <a href="{{url('permainan')}}"><i class="fa fa-gamepad"></i><span class="nav-label">Permainan</span><span class="label label-info pull-right"></span></a>
+            </li>
             <li class="{{ (Request::is('pengembang*')) ? 'active' : ' ' }}">
                 <a href="{{url('pengembang')}}"><i class="fa fa-gears"></i><span class="nav-label">Pengembang</span><span class="label label-info pull-right"></span></a>
             </li>

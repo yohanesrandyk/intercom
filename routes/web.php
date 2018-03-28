@@ -55,6 +55,23 @@ Route::get('pengembang', function () {
     }
 });
 
+Route::get('permainan', function () {
+  if(Auth::user()){
+      return view("permainan.index");
+    }else{
+      return redirect('login');
+    }
+});
+
+
+Route::get('permainan/{game}', function($game){
+  if(Auth::user()){
+    return view('permainan.index2', compact("game"));
+  }else{
+    return redirect('login');
+  }
+});
+
 //bkk
 
 Route::get('referensi', function(){
