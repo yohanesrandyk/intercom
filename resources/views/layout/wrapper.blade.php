@@ -10,7 +10,6 @@
     <link href="{{asset('css/animate.css')}} " rel="stylesheet">
     <link href="{{asset('css/style.css')}} " rel="stylesheet">
     <link href="{{asset('css/plugins/iCheck/custom.css')}} " rel="stylesheet">
-    <link href="{{asset('css/plugins/chosen/bootstrap-chosen.css')}} " rel="stylesheet">
     <link href="{{asset('css/plugins/datapicker/datepicker3.css')}} " rel="stylesheet">
     <link href="{{asset('css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css')}} " rel="stylesheet">
     <link href="{{asset('css/plugins/clockpicker/clockpicker.css')}} " rel="stylesheet">
@@ -27,7 +26,7 @@
         }
     </style>
   </head>
-  <body class="pace-done fixed-sidebar">
+  <body class="pace-done">
     <div id="wrapper">
       @include('layout.sidebar')
       <div id="page-wrapper" class="gray-bg">
