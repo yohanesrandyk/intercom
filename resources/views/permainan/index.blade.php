@@ -8,14 +8,13 @@
                                     <h2 class="font-bold m-b-xs">
                                         Permainan
                                     </h2>
-                                    <small>Sub judul halaman.</small>
+                                    <small>Mainkan permainan gabut ini!</small>
                                     <hr>
                                     <div class="small text-muted">
-                                        penjelasan 1
-
+                                        Dalam aplikasi ini kami menyediakan beberapa pilihan permainan yang bisa anda mainkan.
                                         <br>
                                         <br>
-                                        penjelasan 2
+                                        Terdapat SuperMario Bros, game arcade tahun '98 yang mengharuskan anda menyelamatkan sang putri dari seekor naga, Pacman game keluaran tahun sama ini mengharuskan anda memakan semua pil yang tersdia untuk maju ke level selanjutnya dan masih banyak lagi.
                                     </div><br><br>
                                     
                                     
@@ -32,21 +31,21 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img alt="image" class="img-responsive" src="{{ asset('img/p_big1.jpg')}}">
+                                        <img alt="image" class="img-responsive" src="{{ asset('img/game/pacman.jpg')}}">
                                         <div class="carousel-caption">
                                             <p>Pacman. </p>
                                         </div>
                                     </div>
                                     <div class="item ">
-                                        <img alt="image" class="img-responsive" src="{{ asset('img/p_big2.jpg')}}">
+                                        <img alt="image" class="img-responsive" src="{{ asset('img/game/supermario.png')}}">
                                         <div class="carousel-caption">
                                             <p>Super Mario Bros</p>
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <img alt="image" class="img-responsive" src="{{ asset('img/p_big3.jpg')}}">
+                                        <img alt="image" class="img-responsive" src="{{ asset('img/game/paladin.png')}}">
                                         <div class="carousel-caption">
-                                            <p>HarvestMoon Adventure</p>
+                                            <p>Paladin</p>
                                         </div>
                                     </div>
                                 </div>
@@ -71,12 +70,14 @@
 
                         <h2>Kumpulan Permainan</h2>
                         <p>
-                            penjelasan
+                            Pilih permainan yang anda inginkan.
                         </p>
 
                         <div class="lightBoxGallery">
                             <a href="permainan/pacman" title="Pacman" data-gallery=""><img src="{{ asset('img/1s.jpg')}}"></a>
-                            <a href="permainan/supermario" title="Super Mario" data-gallery=""><img src="{{ asset('img/2s.jpg')}}"></a>
+                            <a href="permainan/supermario" title="Super Mario" data-gallery=""><img src="{{ asset('img/1s.jpg')}}"></a>
+                            <a href="permainan/aow" title="Age Of War" data-gallery=""><img src="{{ asset('img/1s.jpg')}}"></a>
+                            <a href="permainan/paladin" title="Paladin" data-gallery=""><img src="{{ asset('img/1s.jpg')}}"></a>
                             <!-- <a href="permainan/harvestmoon" title="HarvestMoon" data-gallery=""><img src="{{ asset('img/3s.jpg')}}"></a> -->
                             
                         </div>
