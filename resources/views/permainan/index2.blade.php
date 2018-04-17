@@ -15,7 +15,13 @@
 
                         <h2>Tips Bermain</h2>
                         <p>
-                            penjelasan
+                            Mohon di perhatikan ketentuan ketentuan berikut:
+                            <ol>
+                              <li>Disarankan membuka aplikasi di browser desktop anda.</li>
+                              <li>Disarankan membuka aplikasi di browser Chrome.</li>
+                              <li>Jika permainan tidak muncul, buka chrome://plugins/ dan pastikan "Adobe Flash Player" aktif</li>
+                              <li>Tombol bar menu tidak akan tampil ketika membuka aplikasi dalam versi mobile, maka tekan tombol kembali device anda.</li>
+                            </ol>
                         </p>
                     </div>
                 </div>

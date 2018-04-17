@@ -37,7 +37,7 @@
                 </div>
             </li>
             <li class="{{ (Request::is('home*')) ? 'active' : ' ' }}">
-                <a href="{{url('/home')}}"><i class="fa fa-th-large"></i><span class="nav-label">Home</span></a>
+                <a href="{{url('/home')}}"><i class="fa fa-th-large"></i><span class="nav-label">Beranda</span></a>
             </li>
             @if (Auth::user()->id_role == 1 || Auth::user()->id_role == 2 || Auth::user()->id_role == 4)
             <li class="{{ (Request::is('siswa*')) ? 'active' : ' ' }}">
