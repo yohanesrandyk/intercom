@@ -27,7 +27,7 @@
 <h4 class="media-heading">Kata Pengembang</h4>
 <p>Selamat menempuh magang di perusahaan kalian, dan jika terdapat bug dalam program harap menghubungi CP yang tersedia.</p>
 <div class="text-right">
-<a class="btn btn-xs btn-danger"><i class="fa fa-instagram"></i> @randykurniayanto</a></div></div></div>
+<a href="https://www.instagram.com/randykurniayanto/" target="_blank" class="btn btn-xs btn-danger"><i class="fa fa-instagram"></i> @randykurniayanto</a></div></div></div>
 
 <div class="col-lg-4"><div class="widget-head-color-box blue-bg p-lg text-center"><div class="m-b-md">
 <h2 class="font-bold no-margins">Dicki Fadilah Fajar</h2>
@@ -37,7 +37,7 @@
 <h4 class="media-heading">Kata Pengembang</h4>
 <p>Selamat menempuh magang di perusahaan kalian, dan jika terdapat bug dalam program harap menghubungi CP yang tersedia.</p>
 <div class="text-right">
-<a class="btn btn-xs btn-danger"><i class="fa fa-instagram"></i> @dffajar</a></div></div></div>
+<a href="https://www.instagram.com/dffajar/" target="_blank" class="btn btn-xs btn-danger"><i class="fa fa-instagram"></i> @dffajar</a></div></div></div>
 
 <div class="col-lg-4"><div class="widget-head-color-box yellow-bg p-lg text-center"><div class="m-b-md">
 <h2 class="font-bold no-margins">Anita Yuliani</h2>
@@ -73,7 +73,7 @@
 <h2 class="font-bold no-margins">Risma Wandari Putri</h2>
 <small>Rekayasa Perangkat Lunak</small></div>
 <img src="{{ asset('img/wall3.jpg')}}" class="img-circle circle-border m-b-md" alt="profile" style="width:120px;height:120px"><div>
-<span>RPL XII - 1</span> | <span>Cicurug 3</span> | <span>00 Mei 2000</span></div></div><div class="widget-text-box">
+<span>RPL XII - 2</span> | <span>Cisarua 6</span> | <span>00 Mei 2000</span></div></div><div class="widget-text-box">
 <h4 class="media-heading">Kata Pengembang</h4>
 <p>Selamat menempuh magang di perusahaan kalian, dan jika terdapat bug dalam program harap menghubungi CP yang tersedia.</p>
 <div class="text-right">
